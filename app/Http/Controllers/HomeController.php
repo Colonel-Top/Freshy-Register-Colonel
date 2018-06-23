@@ -27,13 +27,14 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $lastlog = DB::table('activity_log')->select('activity')->orderBy('id','desc')->take(5)->value('activity');
 //        dd("HIEI");
         if (Auth::user()->state == 'unverify') {
 //            dd(Auth::user()->state );
             Auth::logout();
             return redirect()->intended(route('login'))->with(Session::flash('error', 'You are registered but didn\'t Aprrove by Developer please Contact Master Admin, more info in about page'));
         } else
-            return view('homeadmin');
+            return view('homeadmin',['lastlog'=>$lastlog]);
     }
 
 }

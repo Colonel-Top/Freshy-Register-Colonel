@@ -35,7 +35,7 @@ class FreshyController extends Controller
     {
 
         $lastlog = DB::table('activity_log')->select('activity')->orderBy('id', 'desc')->take(1)->value('activity');
-        if ($reg_amount = Freshy::count() >= 10000)
+        if ($reg_amount = Freshy::count() >= 100000)
             return view('welcome', ['lastlog' => $lastlog])->with(Session::flash('fullseat', 'Locked'));
         return view('freshy');
     }
@@ -48,7 +48,7 @@ class FreshyController extends Controller
     public function frontindex()
     {
         $lastlog = DB::table('activity_log')->select('activity')->orderBy('id', 'desc')->take(1)->value('activity');
-        if ($reg_amount = Freshy::count() >= 10000)
+        if ($reg_amount = Freshy::count() >= 100000)
             return view('welcome', ['lastlog' => $lastlog])->with(Session::flash('fullseat', 'Locked'));
         return view('welcome', ['lastlog' => $lastlog]);
     }
@@ -184,7 +184,7 @@ class FreshyController extends Controller
 
 
         $freshy = Freshy::Create($request);
-        if ($freshy->id >= 10000 || Freshy::count() >= 10000) {
+        if ($freshy->id >= 100000 || Freshy::count() >= 100000) {
             $freshy->delete();
             return redirect()->intended(route('freshy-done'))->with(Session::flash('error', 'ขณะนี้ระบบได้ปิดการจองที่นั่งแล้ว เนื่องจากมีการจองเต็มจำนวน กรุณาติดต่อ P\'Staff'));
         }

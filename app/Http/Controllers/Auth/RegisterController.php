@@ -66,7 +66,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $log = $data['name']." just landing our event!";
-        DB::table('_log')->insert(['activity'=>$log,'created_at'=> Carbon::now()]);
+        DB::table('activity_log')->insert(['activity'=>$log,'created_at'=> Carbon::now()]);
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],

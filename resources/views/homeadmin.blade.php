@@ -409,16 +409,7 @@
                             </thead>
                             <tbody>
 
-                            @foreach ( $lastlog as $single)
-                                <tr>
-
-                                    <td>{{$single->id}}</td>
-                                    <td>{{$single->activity}}</td>
-                                    <td>{{$single->created_at}}</td>
-
-
-                                </tr>
-                            @endforeach
+                            
                             </tbody>
                         </table>
                     </div>

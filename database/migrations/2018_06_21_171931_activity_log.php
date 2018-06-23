@@ -15,7 +15,7 @@ class ActivityLog extends Migration
     {
         Schema::create('activity_log', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('activity');
+            $table->text('activity');
             $table->timestamps();
         });
     }

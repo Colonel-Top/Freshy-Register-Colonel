@@ -335,7 +335,7 @@
         <br><br><br>
         <div class="container-fluid" style="text-align: center;">
             <div class="user__header" style="font-family: Kanit-Medium; text-align: center;">
-                <p>Under Copyright of Colonel-Technology</p>
+                <p>Licenses Under Copyright of Colonel-Technology</p>
                 <p>Any Harmful or Attack the website will be record and punish by Thailand & International law</p>
             </div>
         </div>
@@ -351,7 +351,7 @@
                     more<br>
                     Scope area of Graphic: Designer for all types, Video Editor, Sound Editor, 3D Animation - Modeling -
                     Animating - SLR<br>
-                    Co-operating or Contact: +66(62-546-1939) also LINE ID: promsurin and Email:
+                    Co-operating or Contact: +66(62-546-1939) also LINE ID: promsurin , email:
                     promsurinm@hotmail.com<br>
                 </p>
                 <br>

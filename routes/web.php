@@ -30,6 +30,7 @@ Route::prefix('staff')->group(function () {
 });
 Route::get('/about', 'FreshyController@about')->name('about');
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/reg', 'FreshyController@index')->name('freshy');
 Route::get('/search', 'FreshyController@searchindex')->name('searchindex');
 Route::get('/searchlost', 'FreshyController@searchlostindex')->name('searchlostindex');
@@ -40,4 +41,5 @@ Route::post('/validate', 'FreshyController@checkfirst')->name('freshy-validate')
 Route::post('/redirectback', 'FreshyController@redirectback')->name('redirectback');
 Route::get('/result', 'FreshyController@done')->name('freshy-done');
 Route::get('/', 'FreshyController@frontindex')->name('index');
+Route::get('/s', 'FreshyController@frontindex2')->name('index2');
 Auth::routes();

@@ -338,17 +338,30 @@
                     <select class="form__input" id="faculty" name="faculty" required default="{{old('faculty')}}">
                         <option value="" selected disabled>*คณะ / Faculty</option>
                         <option value="คณะนิติศาสตร์">คณะนิติศาสตร์ / Faculty of Law</option>
-                        <option value="คณะพาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี / Faculty of Commerce and Accountancy</option>
+                        <option value="คณะพาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี / Faculty of Commerce and
+                            Accountancy
+                        </option>
                         <option value="คณะรัฐศาสตร์">คณะรัฐศาสตร์ / Faculty of Political Science</option>
                         <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์ / Faculty of Economics</option>
-                        <option value="คณะสังคมสงเคราะห์ศาสตร์">คณะสังคมสงเคราะห์ศาสตร์ / Faculty of Social Science</option>
-                        <option value="คณะสังคมวิทยาและมานุษยวิทยา">คณะสังคมวิทยาและมานุษยวิทยา / Faculty of Sociology and Anthropology</option>
+                        <option value="คณะสังคมสงเคราะห์ศาสตร์">คณะสังคมสงเคราะห์ศาสตร์ / Faculty of Social Science
+                        </option>
+                        <option value="คณะสังคมวิทยาและมานุษยวิทยา">คณะสังคมวิทยาและมานุษยวิทยา / Faculty of Sociology
+                            and Anthropology
+                        </option>
                         <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์ / Faculty of Arts</option>
-                        <option value="คณะวารสารศาสตร์และสื่อสารมวลชน">คณะวารสารศาสตร์และสื่อสารมวลชน / Faculty of Journalism and Mass Communication</option>
-                        <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี / Faculty of Science and Technology</option>
+                        <option value="คณะวารสารศาสตร์และสื่อสารมวลชน">คณะวารสารศาสตร์และสื่อสารมวลชน / Faculty of
+                            Journalism and Mass Communication
+                        </option>
+                        <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี / Faculty of Science and
+                            Technology
+                        </option>
                         <option value="คณะวิศวกรรมศาสตร์">คณะวิศวกรรมศาสตร์ / Faculty of Engineering</option>
-                        <option value="สถาบันเทคโนโลยีนานาชาติสิรินธร">สถาบันเทคโนโลยีนานาชาติสิรินธร / Sirindhorn International Institute of Technology</option>
-                        <option value="คณะสถาปัตยกรรมศาสตร์และการผังเมือง">คณะสถาปัตยกรรมศาสตร์และการผังเมือง / Faculty of Architecture</option>
+                        <option value="สถาบันเทคโนโลยีนานาชาติสิรินธร">สถาบันเทคโนโลยีนานาชาติสิรินธร / Sirindhorn
+                            International Institute of Technology (SIIT)
+                        </option>
+                        <option value="คณะสถาปัตยกรรมศาสตร์และการผังเมือง">คณะสถาปัตยกรรมศาสตร์และการผังเมือง / Faculty
+                            of Architecture
+                        </option>
                         <option value="คณะศิลปกรรมศาสตร์">คณะศิลปกรรมศาสตร์ / Faculty of Fine Arts</option>
                         <option value="คณะแพทยศาสตร์">คณะแพทยศาสตร์ / Faculty of Medicine</option>
                         <option value="คณะสหเวชศาสตร์">คณะสหเวชศาสตร์ / Faculty of Allied Health</option>
@@ -356,12 +369,20 @@
                         <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์ / Faculty of Nursing</option>
                         <option value="คณะสาธารณสุขศาสตร์">คณะสาธารณสุขศาสตร์ / Faculty of Public Health</option>
                         <option value="คณะเภสัชศาสตร์">คณะเภสัชศาสตร์ / Faculty of Pharmacy</option>
-                        <option value="คณะวิทยาการเรียนรู้และศึกษาศาสตร์">คณะวิทยาการเรียนรู้และศึกษาศาสตร์ / Faculty of Science and Education</option>
-                        <option value="วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์">วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์ / Puey Ungphakorn College</option>
+                        <option value="คณะวิทยาการเรียนรู้และศึกษาศาสตร์">คณะวิทยาการเรียนรู้และศึกษาศาสตร์ / Faculty of
+                            Science and Education
+                        </option>
+                        <option value="วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์">วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์ / Puey
+                            Ungphakorn College
+                        </option>
                         <option value="วิทยาลัยนวัตกรรม">วิทยาลัยนวัตกรรม / College of Innovation</option>
                         <option value="วิทยาลัยสหวิทยาการ">วิทยาลัยสหวิทยาการ / Interdisciplinary College</option>
-                        <option value="วิทยาลัยนานาชาติ ปรีดี พนมยงค์">วิทยาลัยนานาชาติ ปรีดี พนมยงค์ / Pridi Banomyong International College</option>
-                        <option value="วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์ / Chulabhorn International College of Medicine</option>
+                        <option value="วิทยาลัยนานาชาติ ปรีดี พนมยงค์">วิทยาลัยนานาชาติ ปรีดี พนมยงค์ / Pridi Banomyong
+                            International College
+                        </option>
+                        <option value="วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์ /
+                            Chulabhorn International College of Medicine
+                        </option>
                         <option value="วิทยาลัยโลกคดีศึกษา">วิทยาลัยโลกคดีศึกษา / World College of Education</option>
                         <option value="สถาบันภาษา">สถาบันภาษา / Language Institute of TU</option>
                         <option value="other">อื่นๆ / Other</option>
@@ -428,17 +449,20 @@
                 </div>
                 <div class="form__group">
                     {{--<label for="name">ชื่อ</label>--}}
-                    <input type="text" name="disdrug" placeholder="*แพ้ยา / Drug Allergic (Non use (-))" class="form__input"
+                    <input type="text" name="disdrug" placeholder="*แพ้ยา / Drug Allergic (Non use (-))"
+                           class="form__input"
                            required value="{{old('disdrug')}}"/>
                 </div>
                 <div class="form__group">
                     {{--<label for="name">ชื่อ</label>--}}
-                    <input type="text" name="sosname" placeholder="*ชื่อ บุคคลที่ติดต่อได้ / SOS Firstname" class="form__input"
+                    <input type="text" name="sosname" placeholder="*ชื่อ บุคคลที่ติดต่อได้ / SOS Firstname"
+                           class="form__input"
                            required value="{{old('sosname')}}"/>
                 </div>
                 <div class="form__group">
                     {{--<label for="name">ชื่อ</label>--}}
-                    <input type="text" name="sossurname" placeholder="*นามสกุล บุคคลที่ติดต่อได้ / SOS Lastname" class="form__input"
+                    <input type="text" name="sossurname" placeholder="*นามสกุล บุคคลที่ติดต่อได้ / SOS Lastname"
+                           class="form__input"
                            required value="{{old('sossurname')}}"/>
                 </div>
                 <div class="form__group">
@@ -448,12 +472,14 @@
                 </div>
                 <div class="form__group">
                     {{--<label for="name">ชื่อ</label>--}}
-                    <input type="text" name="sostel1" placeholder="*เบอร์ติดต่อฉุกเฉิน / SOS Contact" class="form__input" required
+                    <input type="text" name="sostel1" placeholder="*เบอร์ติดต่อฉุกเฉิน / SOS Contact"
+                           class="form__input" required
                            value="{{old('sostel1')}}"/>
                 </div>
                 <div class="form__group">
                     {{--<label for="name">ชื่อ</label>--}}
-                    <input type="text" name="sostel2" placeholder="เบอร์ติดต่อฉุกเฉิน 2 / SOS Contact 2" class="form__input"
+                    <input type="text" name="sostel2" placeholder="เบอร์ติดต่อฉุกเฉิน 2 / SOS Contact 2"
+                           class="form__input"
                            value="{{old('sostel2')}}"/>
                 </div>
 
@@ -490,7 +516,8 @@
 
         }
         var back = function () {
-            window.location.href = "{{URL::to('/')}}";
+
+                window.location.href = "{{URL::to('/')}}";
 
         }
 

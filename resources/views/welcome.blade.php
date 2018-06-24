@@ -9,7 +9,7 @@
 
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1366px) and (max-width: 1920px) {
         .one {
 
             background-size: 120% 103% !important;
@@ -27,6 +27,108 @@
             /*transform: translate3d(0, 0, 0);*/
             /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
             height: 100vh;
+
+        }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4.5vmin;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 615px;
+            /* margin: 10vh auto; */
+            padding: 3%;
+            height: 0px;
+            margin-left: 4%;
+        }
+    }
+
+    @media only screen and (max-width: 1366px) and (max-width: 1366px) {
+        .one {
+
+            background-size: 120% 103% !important;
+            animation: move2 1.53s ease-in-out forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .onerow {
+
+            background-size: 114% 103% !important;
+            animation: move2 1.83s ease forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4.5vmin;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 465px;
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
+
+        }
+    }
+
+    @media only screen and (min-width: 1024px)  and (max-width: 1024px) {
+        .one {
+
+            background-size: 120% 103% !important;
+            animation: move2 1.53s ease-in-out forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .onerow {
+
+            background-size: 114% 103% !important;
+            animation: move2 1.83s ease forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4.5vmin;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 465px;
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
 
         }
     }
@@ -51,6 +153,26 @@
             height: 100vh;
 
         }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4.5vmin;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 465px;
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
+
+        }
     }
 
     @media only screen and (max-width: 720px) {
@@ -71,6 +193,26 @@
             /*transform: translate3d(0, 0, 0);*/
             /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
             height: 100vh;
+
+        }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4vmax;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 465px;
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
 
         }
     }
@@ -96,6 +238,26 @@
 
         }
 
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4vmax;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 465px;
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
+
+        }
+
     }
 
     @media only screen and (max-width: 368px) {
@@ -118,25 +280,65 @@
             height: 100vh;
 
         }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4vmax;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 465px;
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
+
+        }
     }
 
-    .user {
-        width: 65%;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+
+        background-size: 180% 100% !important;
+        animation: move2 1.521s ease-in-out forwards;
+        /*transform: translate3d(0, 0, 0);*/
+        /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+        height: 100vh;
+
+    }
+
+    .user.close {
+        width: 100%;
         max-width: 465px;
-        /*margin: 8vh 1vh;*/
-        padding: 4%;
+        /*margin: 10vh auto;*/
+
+        padding: 3%;
+
         height: 0px;
-        text-align: left;
+        -webkit-transition: height 2.75s ease-in;
+        -moz-transition: height 2.75s ease-in;
+        -ms-transition: height 2.75s ease-in;
+        -o-transition: height 2.75s ease-in;
+        transition: height 2.75s ease-in;
     }
 
     .user.open {
-
         width: 100%;
         max-width: 465px;
-        /*margin: 10vh 1vh;*/
-        padding: 4%;
-
-        text-align: left;
+        /*margin: 10vh auto;*/
+        background: whitesmoke;
+        padding: 3%;
 
         height: 100px;
 
@@ -167,20 +369,12 @@
         src: url('{{ asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
     }
 
-    /*.user__header {*/
-    /*text-align: center;*/
-    /*opacity: 0;*/
-    /*transform: translate3d(0, 500px, 0);*/
-    /*animation: arrive 600s ease-in-out 0.6s forwards;*/
-
-    /*}*/
     .user__header {
         text-align: center;
         opacity: 0;
         transform: translate3d(0, 500px, 0);
         animation: arrive 400ms ease-in-out 0.6s forwards;
-        width: 167%;
-        margin-left: 3px;
+
     }
 
     .user__title {
@@ -278,7 +472,7 @@
         }
 
         50% {
-            background-position: 100% 0
+            background-position: 10% 0
         }
 
         100% {
@@ -290,6 +484,14 @@
         box-sizing: border-box
     }
 
+    .space2px {
+        font-family: GothamRounded-Light;
+        letter-spacing: 16px;
+        font-size: 13px;
+        color: #777777;
+        text-align: center;
+    }
+
     .btn {
 
         width: 30%;
@@ -299,7 +501,7 @@
         border: 0;
         color: black;
         background: none;
-        opacity: 0.7;
+        opacity: 1;
         transition: 0.3s;
 
     }
@@ -315,56 +517,21 @@
         background: none;
         opacity: 0.7;
         transition: 0.3s;
-        box-shadow: 0 0 3px rgba(255, 255, 255, 1);
-        border: 3px solid rgba(255, 255, 255, 1);
+        box-shadow: 0 0 0px rgba(237, 233, 238, 0);
+        border: 0px solid rgba(229, 235, 238, 0);
 
-    }
-
-    .space2px {
-        font-family: GothamRounded-Light;
-        letter-spacing: 8px;
-        font-size: 2.3vmin;
-
-        color: #777777;
-
-        text-align: center !important;
-
-    }
-
-    .space3px {
-        font-family: GothamRounded-Light;
-
-        font-size: 1.6em !important;
-        font-size: 16px;
-        /*font-size: 4.3vmin;*/
-        /*color: #777777;*/
-        color: black;
-        text-align: center !important;
-    }
-
-    .space4px {
-        font-family: GothamRounded-Bold;
-
-        font-size: 1.3em !important;
-        font-size: 16px;
-        font-weight: bold;
-        /*font-size: 4.3vmin;*/
-        /*color: #777777;*/
-        color: #010053;
-        text-align: center !important;
     }
 
     .newfriends {
         font-family: Kanit-Medium;
         letter-spacing: 6px;
-        font-size: 2vmin;
+        font-size: 18px;
         color: #777777;
         text-align: center;
-
     }
 
     .formheader {
-        font-family: GothamRounded-Light;
+        font-family: Gotham-Ultra;
         margin-top: 5px;
     }
 
@@ -398,14 +565,6 @@
         100% {
             opacity: 0;
         }
-    }
-
-    .imgresizer {
-        width: auto;
-        height: auto;
-        display: block;
-        max-width: 25%;
-        float: left;
     }
 
     .switch {
@@ -489,176 +648,177 @@
         animation: arrive 400ms ease-in-out 0.66s forwards;
         display: block;
     }
+
+    .textleft {
+        text-align: left;
+    }
+
+    .rows {
+        vertical-align: center;
+
+    }
+
+    .fontthai {
+        font-family: Kanit-Medium;
+        font-size: 20px !important;
+        color: black !important;
+    }
 </style>
 @section('content')
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="gone">
 
 
         <div class="user" id="user">
-            <header class="user__header ">
-                {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
-                <h1 class="user__title formheader"
-                    style="letter-spacing: 10px;font-size:9vmin;">STUDENT</h1>
+            <div class="container">
 
-                <div style="margin-bottom:10px;"></div>
-                {{--&nbsp;<h2 class="space2px"> FRESHY</h2>--}}
+                <div class="user" id="user">
+                    <header class="user__header" style="text-align: center;">
+                        {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
 
-            </header>
-            <div class="user__header">
-                <h3 class="space2px">
-                    BECOME FRESHY
-                </h3>
-                <br>
-                <div id="th2" class="th2">
-                    <h3 class="newfriends">ลงทะเบียนรับเพื่อนใหม่</h3>
+                        <h1 class="user__title formheader"
+                            style="letter-spacing: 10px;font-size:9vmin;">STUDENT</h1>
+                        <br>
+
+                        <h3 class="space2px">
+                            BECOME FRESHY
+                        </h3>
+
+                        <div id="th2" class="th2">
+                            <h3 class="newfriends">ลงทะเบียนรับเพื่อนใหม่</h3>
+                        </div>
+
+                        <div id="en2" class="en2">
+                            <h3 class="newfriends">Register Freshy</h3>
+                        </div>
+                        <br>
+                        <section name="switcher" style="text-align: center;">
+                            <label class="space3px ">TH&nbsp;&nbsp;</label>
+                            <label id="switch" class="switch">
+
+                                <input type="checkbox">
+                                <span class="slider" onclick="toggleDiv()"></span>
+
+                            </label>
+                            <label class="space3px">&nbsp;&nbsp;EN</label>
+                        </section>
+                    </header>
+                    <br>
+                    <div id="th" class="th ">
+
+                        <div class="user__header" style="    margin-left: -17%;">
+
+                            @if(Session::has('fullseat'))
+                                <button class="btn fontthai" type="button" onclick="reg()"><img
+                                            src="{{asset('/consolex.png')}}"
+                                            style="width:30%;">
+                                    ลงทะเบียน<i class="fa fa-lock" style="font-size: 20px;"></i>
+                                </button>
+                            @else
+                                <button class="btn fontthai" type="button" onclick="reg()"><img
+                                            src="{{asset('/consolex.png')}}"
+                                            style="width:30%;">
+                                    ลงทะเบียน
+                                </button>
+                            @endif
+                            <br>
+                            <button class="btn fontthai" type="button" onclick="codesearch()"><img
+                                        src="{{asset('/consoleo.png')}}"
+                                        style="width:30%;">
+                                ค้นหาสถานะ
+                            </button>
+                            <br>
+                            <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
+                                        src="{{asset('/consoletri.png')}}"
+                                        style="width:30%;">
+                                ค้นหา Code
+                            </button>
+                            <br>
+                            <button class="btn fontthai" type="button" onclick="login()"><img
+                                        src="{{asset('/consolextra.png')}}"
+                                        style="width:30%;">
+                                Staff Login
+                            </button>
+                            <br>
+                            <br>
+                            <button class="btn fontthai" type="button" onclick="about()"><img
+                                        src="{{asset('/consolespecial.png')}}"
+                                        style="width:30%;">
+                                เกี่ยวกับระบบ
+                            </button>
+                            <br>
+                                <br>
+                                <br>
+                                <div class="user__header">
+                                    <p style="font-family: Kanit-Medium;">กิจกรรมล่าสุด: {{$lastlog}}</p>
+                                </div>
+                        </div>
+
+
+                    </div>
+                    <div id="en" class="en ">
+
+                        <div class="user__header" style="    margin-left: -17%;">
+
+                            @if(Session::has('fullseat'))
+                                <button class="btn fontthai" type="button" onclick="reg()"><img
+                                            src="{{asset('/consolex.png')}}"
+                                            style="width:30%;">
+                                    Register<i class="fa fa-lock" style="font-size: 20px;"></i>
+                                </button>
+                            @else
+                                <button class="btn fontthai" type="button" onclick="reg()"><img
+                                            src="{{asset('/consolex.png')}}"
+                                            style="width:30%;">
+                                    Register
+                                </button>
+                            @endif
+                            <br>
+                            <button class="btn fontthai" type="button" onclick="codesearch()"><img
+                                        src="{{asset('/consoleo.png')}}"
+                                        style="width:30%;">
+                                Search Status
+                            </button>
+                            <br>
+                            <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
+                                        src="{{asset('/consoletri.png')}}"
+                                        style="width:30%;">
+                                Search Code
+                            </button>
+                            <br>
+                            <button class="btn fontthai" type="button" onclick="login()"><img
+                                        src="{{asset('/consolextra.png')}}"
+                                        style="width:30%;">
+                                Staff Login
+                            </button>
+                            <br>
+                            <br>
+                            <button class="btn fontthai" type="button" onclick="about()"><img
+                                        src="{{asset('/consolespecial.png')}}"
+                                        style="width:30%;">
+                                About Application
+                            </button>
+                            <br>
+                                <br>
+                                <br>
+                                <div class="user__header">
+                                    <p style="font-family: Kanit-Medium;">Last Activity: {{$lastlog}}</p>
+                                </div>
+                        </div>
+
+
+                    </div>
                 </div>
-                <div id="en2" class="en2">
-                    <h3 class="newfriends">Register Freshy</h3>
-                </div>
+
+
             </div>
             <br>
-
-            <div class="user__header">
-                <label class="space3px">TH&nbsp;&nbsp;</label>
-                <label id="switch" class="switch">
-
-                    <input type="checkbox">
-                    <span class="slider" onclick="toggleDiv()"></span>
-
-                </label>
-                <label class="space3px">&nbsp;&nbsp;EN</label>
-            </div>
-
-            <div id="th" class="user__header th" style="margin-left:-16vmin;">
-
-
-                <br>
-
-                @if(Session::has('fullseat'))
-                    <button class="btn " type="button" >
-
-
-                        <img class="imgresizer" src="{{asset('/consolex.png')}}">
-
-                        &nbsp;<label class="space3px" style="font-family: Kanit-Medium !important;">&nbsp;ลงทะเบียน
-                            / เต็ม &nbsp;
-                            <i class="fa fa-lock" style="font-size: 1.6em;"></i>
-                        </label>
-                    </button>
-                @else
-                    <button class="btn " type="button" onclick="reg()">
-
-
-                        <img class="imgresizer" src="{{asset('/consolex.png')}}">
-
-                        &nbsp;<label class="space3px" style="font-family: Kanit-Medium !important;">&nbsp;ลงทะเบียน
-
-                        </label>
-                    </button>
-                @endif
-                <br>
-                <button class="btn " type="button" onclick="codesearch()"><img class="imgresizer"
-                                                                               src="{{asset('/consoleo.png')}}">
-                    &nbsp;<label class="space3px"
-                                 style="font-family: Kanit-Medium !important;">&nbsp;ค้นหาสถานะของฉัน</label>
-                </button>
-                <br>
-                <button class="btn " type="button" onclick="codelostsearch()"><img class="imgresizer"
-                                                                                   src="{{asset('/consoletri.png')}}">
-                    &nbsp;<label class="space3px"
-                                 style="font-family: Kanit-Medium !important;">&nbsp;ค้นหารหัสของฉัน</label>
-                </button>
-                <br>
-                <button class="btn " type="button" onclick="login()"><img class="imgresizer"
-                                                                          src="{{asset('/consolextra.png')}}">
-                    &nbsp;<label class="space3px" style="font-family: Kanit-Medium !important;">&nbsp;Staff
-                        Login</label>
-                </button>
-                <br>
-                <button class="btn space4px " type="button" onclick="about()">
-                    &nbsp;ABOUT
-                </button>
-
-                <br> <br>
-                <div style="opacity:0.7; color:dimgrey; margin-left:82px;">
-                    <p style="font-family: Kanit-Medium">กิจกรรมล่าสุด: {{$lastlog}}</p>
-                </div>
-                <br>
-                <div style="opacity:0.7; color:dimgrey; margin-left:82px;">
-                    <div style="opacity:0.7; color:dimgrey; margin-left:82px;">
-                        <p style="font-family: Kanit-Medium">Scope: อมธ.องค์การนักศึกษาแห่งมหาวิทยาลัยธรรมศาสตร์<br>
-                            WebDev: Promsurin Phutthammawong TU82 CN15</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="en" class="user__header en" style="margin-left:-16vmin;">
-
-
-                <br>
-
-                @if(Session::has('fullseat'))
-                    <button class="btn " type="button">
-
-
-                        <img class="imgresizer" src="{{asset('/consolex.png')}}">
-
-                        &nbsp;<label class="space3px">&nbsp;Register
-
-                            / Full &nbsp;
-                            <i class="fa fa-lock" style="font-size: 1.6em;"></i>
-
-                        </label>
-                    </button>
-                @else
-                    <button class="btn " type="button" onclick="reg()">
-
-
-                        <img class="imgresizer" src="{{asset('/consolex.png')}}">
-
-                        &nbsp;<label class="space3px">&nbsp;Register
-
-                        </label>
-                    </button>
-                @endif
-                <br>
-                <button class="btn " type="button" onclick="codesearch()"><img class="imgresizer"
-                                                                               src="{{asset('/consoleo.png')}}">
-                    &nbsp;<label class="space3px">&nbsp;Search My Status</label>
-                </button>
-                <br>
-                <button class="btn " type="button" onclick="codelostsearch()"><img class="imgresizer"
-                                                                                   src="{{asset('/consoletri.png')}}">
-                    &nbsp;<label class="space3px">&nbsp;Search My Code</label>
-                </button>
-                <br>
-                <button class="btn " type="button" onclick="login()"><img class="imgresizer"
-                                                                          src="{{asset('/consolextra.png')}}">
-                    &nbsp;<label class="space3px">&nbsp;Staff Login</label>
-                </button>
-                <br>
-                <button class="btn space4px " type="button" onclick="about()">
-                    &nbsp;ABOUT
-                </button>
-                <br><br>
-                <div style="opacity:0.7; color:dimgrey; margin-left:82px;">
-                    <div style="opacity:0.7; color:dimgrey; margin-left:82px; text-align: left !important;">
-                        <p style="font-family: Kanit-Medium">Last Activity: {{$lastlog}}</p>
-                    </div>
-                </div>
-                <br>
-                <div style="opacity:0.7; color:dimgrey; margin-left:82px;">
-                    <div style="opacity:0.7; color:dimgrey; margin-left:82px;">
-                        <p style="font-family: Kanit-Medium">Scope: อมธ.องค์การนักศึกษาแห่งมหาวิทยาลัยธรรมศาสตร์<br>
-                            WebDev: Promsurin Phutthammawong TU82 CN15</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
+    </div>
 
     </div>
+
+
 
     <script>
         function printDiv(divName) {
@@ -678,7 +838,9 @@
 
         }
         var about = function () {
-            window.location.href = "{{route('about')}}";
+            $("#gone").fadeOut("slow", function () {
+                window.location.href = "{{route('about')}}";
+            });
 
         }
         var back = function () {
@@ -686,11 +848,24 @@
 
         }
         var reg = function () {
-            window.location.href = "{{route('freshy')}}";
+
+
+            $("#gone").fadeOut("slow", function () {
+                // Animation complete.
+                window.location.href = "{{route('freshy')}}"
+            });
+
+            {{--setTimeout(function () {--}}
+            {{--;--}}
+
+            {{--}, 1500);--}}
+
 
         }
         var login = function () {
-            window.location.href = "{{route('login')}}";
+            $("#gone").fadeOut("slow", function () {
+                window.location.href = "{{route('login')}}";
+            });
 
         }
         var relog = function () {
@@ -698,22 +873,27 @@
 
         }
         var codesearch = function () {
-            window.location.href = "{{route('searchindex')}}";
-
+            $("#gone").fadeOut("slow", function () {
+                window.location.href = "{{route('searchindex')}}";
+            });
         }
         var codelostsearch = function () {
-            window.location.href = "{{route('searchlostindex')}}";
-
+            $("#gone").fadeOut("slow", function () {
+                window.location.href = "{{route('searchlostindex')}}";
+            });
         }
         var togglelang = function () {
             if (state == "1") {
-                $(".en").toggleClass('open');
+
                 $(".th").toggleClass('close');
+                $(".en").toggleClass('open');
                 state = 2;
             }
             else {
-                $(".th").toggleClass('open');
+                state = 1;
                 $(".en").toggleClass('close');
+                $(".th").toggleClass('open');
+
             }
         }
 

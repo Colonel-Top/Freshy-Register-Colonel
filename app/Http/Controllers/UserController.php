@@ -51,10 +51,10 @@ class UserController extends Controller
             return redirect()->intended(route('index'));
 
         $ticket = Ticket::count();
-        $lastlog = DB::table('activity_log')->select('activity')->orderBy('id','desc')->take(5)->value('activity');
+        $lastlog = DB::table('activity_log')->orderBy('id','desc')->get()->take(5);
         $reg_amount = Freshy::count();
 
-        return view('home',['reg_amount'=> $reg_amount,'board_amount'=>$ticket,'lastlog'=>$lastlog]);
+        return view('homeadmin',['reg_amount'=> $reg_amount,'board_amount'=>$ticket,'lastlog'=>$lastlog]);
     }
     public function showunique($id)
     {

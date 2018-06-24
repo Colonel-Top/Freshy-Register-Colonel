@@ -21,7 +21,7 @@
     .user {
         width: 100%;
         max-width: 465px;
-        margin: 10vh auto;
+        /*margin: 10vh auto;*/
 
         padding: 3%;
 
@@ -32,7 +32,7 @@
     .user.open {
         width: 100%;
         max-width: 465px;
-        margin: 10vh auto;
+        /*margin: 10vh auto;*/
         background: whitesmoke;
         padding: 3%;
 
@@ -235,6 +235,28 @@
         opacity: 0;
     }
 
+    .newfriends {
+        font-family: Kanit-Medium;
+        letter-spacing: 6px;
+        /*font-size: 2vmin;*/
+        color: #777777;
+        /*text-align: center;*/
+
+    }
+
+    .cursor {
+        display: block;
+        position: absolute;
+        height: 105%;
+        top: 7px;
+        right: -5px;
+        width: 2px;
+        /* Change colour of Cursor Here */
+        background-color: black;
+        z-index: 1;
+        animation: flash 0.5s none infinite alternate;
+    }
+
     .cursor {
         display: block;
         position: absolute;
@@ -257,7 +279,92 @@
         }
     }
 
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 24px;
+    }
 
+    /* Hide default HTML checkbox */
+    .switch input {
+        display: none;
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: deepskyblue;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: lightgreen;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    .en {
+        animation: arrive 400ms ease-in-out 0.66s forwards;
+
+        display: none;
+    }
+
+    .th {
+        animation: arrive 400ms ease-in-out 0.66s forwards;
+        display: block;
+    }
+
+    .en2 {
+        animation: arrive 400ms ease-in-out 0.66s forwards;
+
+        display: none;
+    }
+
+    .th2 {
+        animation: arrive 400ms ease-in-out 0.66s forwards;
+        display: block;
+    }
+
+    .fontthai {
+        font-family: GothamRounded-Light;
+        font-size: 18px;
+    }
 </style>
 @section('content')
 
@@ -265,62 +372,78 @@
 
 
         <div class="user" id="user">
-            <header class="user__header ">
+            <header class="user__header" style="text-align: center;">
                 {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
+
                 <h1 class="user__title formheader"
-                    style="letter-spacing: 10px;font-size:35px;">STUDENT</h1>
+                    style="letter-spacing: 10px;font-size:9vmin;">STUDENT</h1>
+                <br>
 
-                <div style="margin-bottom:10px;"></div>
-                {{--&nbsp;<h2 class="space2px"> FRESHY</h2>--}}
-                &nbsp;<h2 class="space2px" style="font-weight:bolder; ">
-
+                <h3 class="space2px">
                     BECOME FRESHY
-                </h2>
+                </h3>
+
+                <div id="th2" class="th2">
+                    <h3 class="newfriends">ลงทะเบียนรับเพื่อนใหม่</h3>
+                </div>
+
+                <div id="en2" class="en2">
+                    <h3 class="newfriends">Register Freshy</h3>
+                </div>
+                <br>
+                <section name="switcher" style="text-align: center;">
+                    <label class="space3px">TH&nbsp;&nbsp;</label>
+                    <label id="switch" class="switch">
+
+                        <input type="checkbox">
+                        <span class="slider" onclick="toggleDiv()"></span>
+
+                    </label>
+                    <label class="space3px">&nbsp;&nbsp;EN</label>
+                </section>
             </header>
-            <div class="user__header">
-                <br> &nbsp;<h2 class="newfriends">SEARCH MY STATUS</h2>
-                <form action="{{ route('search-query') }}" class="form" style="text-align: center;" method="POST"
-                      enctype="multipart/form-data">
-                    {{csrf_field()}}
-                    <div class="form__group">
-                        {{--<label for="name">ชื่อ</label>--}}
-                        <input type="text" name="search" placeholder="Input your Code here" class="form__input" required
-                               value="{{old('search')}}" style="text-align: center;"/>
-                    </div>
+            <br>
 
-                    <button class="btn" type="submit"><img src="{{asset('/consolex.png')}}"
-                                                           style="width:30%;">
-                        Search
+            <div class="user__header" style="    margin-left: -40px;">
+
+                @if(Session::has('fullseat'))
+                    <button class="btn fontthai" type="button" onclick="reg()"><img src="{{asset('/consolex.png')}}"
+                                                                                    style="width:30%;">
+                        ลงทะเบียน.
                     </button>
-                    <button class="btn" type="button" onclick="back()"><img src="{{asset('/consolextra.png')}}"
-                                                                            style="width:30%;">
-                        Home
+                @else
+                    <button class="btn fontthai" type="button" onclick="reg()"><img src="{{asset('/consolex.png')}}"
+                                                                                    style="width:30%;">
+                        ลงทะเบียน. <i class="fa fa-lock" style="font-size: 1.6em;"></i>
                     </button>
-                    <br>
-                    <br>
-                    @if (Session::has('error'))
-                        <h2 class="alert-danger breadcrumb"
-                            style="font-family: Kanit-Medium; font-size:16px; ">{{ Session::get('error') }}</h2>
-                    @endif
-                    @if (Session::has('result'))
-                        <h2 class="alert-success breadcrumb"
-                            style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('result') }}</h2>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: left !important;">
-                                    @foreach( session()->get('data') as $data)
-
-                                        <p>{{$data}}</p>
-                                    @endforeach
-                                </div>
-                            </div>
-                        </div>
-                    @endif
-
-
-                </form>
+                @endif
+                <br>
+                <button class="btn fontthai" type="button" onclick="codesearch()"><img src="{{asset('/consoleo.png')}}"
+                                                                                       style="width:30%;">
+                    ค้นหาสถานะ
+                </button>
+                <br>
+                <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
+                            src="{{asset('/consoletri.png')}}"
+                            style="width:30%;">
+                    ค้นหา Code
+                </button>
+                <br>
+                <button class="btn fontthai" type="button" onclick="login()"><img src="{{asset('/consolextra.png')}}"
+                                                                                  style="width:30%;">
+                    Staff Login
+                </button>
+                <br>
+                <button class="btn fontthai" type="button" onclick="about()"><img src="{{asset('/consolextra.png')}}"
+                                                                                  style="width:30%;">
+                    About Application
+                </button>
+                <br>
             </div>
 
+            <div class="user__header" >
+                <p style="font-family: Kanit-Medium;">last Activity: {{$lastlog}}</p>
+            </div>
 
         </div>
 
@@ -337,21 +460,51 @@
     </script>
 
     <script type="text/javascript">
+        var state = 1;
         var fn = function () {
             //    alert("Hello");
             $(".user").toggleClass('open');
 
         }
+        var about = function () {
+            window.location.href = "{{route('about')}}";
 
+        }
         var back = function () {
             window.location.href = "{{URL::to('/')}}";
+
+        }
+        var reg = function () {
+            window.location.href = "{{route('freshy')}}";
+
+        }
+        var login = function () {
+            window.location.href = "{{route('login')}}";
 
         }
         var relog = function () {
             window.location.href = "{{route('freshy')}}";
 
         }
+        var codesearch = function () {
+            window.location.href = "{{route('searchindex')}}";
 
+        }
+        var codelostsearch = function () {
+            window.location.href = "{{route('searchlostindex')}}";
+
+        }
+        var togglelang = function () {
+            if (state == "1") {
+                $(".en").toggleClass('open');
+                $(".th").toggleClass('close');
+                state = 2;
+            }
+            else {
+                $(".th").toggleClass('open');
+                $(".en").toggleClass('close');
+            }
+        }
 
         function autoType(elementClass, typingSpeed) {
             var thhis = $(elementClass);
@@ -387,5 +540,25 @@
 
 
         });
+
+        function toggleDiv() {
+            var e = document.getElementById('th');
+            var x = document.getElementById('en');
+            var g = document.getElementById('th2');
+            var h = document.getElementById('en2');
+            if (e.style.display == null || e.style.display == "none") {
+                e.style.display = "block";
+                x.style.display = "none";
+                g.style.display = "block";
+                h.style.display = "none";
+            } else {
+                e.style.display = "none";
+                x.style.display = "block";
+                g.style.display = "none";
+                h.style.display = "block";
+            }
+
+        }
     </script>
+
 @endsection

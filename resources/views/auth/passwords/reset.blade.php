@@ -1,7 +1,41 @@
 @extends('layouts.app')
+<style>
+    body {
 
+        background-size: 180% 100% !important;
+        animation: move2 1.521s ease-in-out forwards;
+        /*transform: translate3d(0, 0, 0);*/
+        /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+        height: 100vh;
+
+    }
+    @keyframes arrive {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 50px, 0);
+        }
+
+        100% {
+            opacity: 0.8;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes move2 {
+        0% {
+            background-position: 0 0
+        }
+
+        50% {
+            background-position: 10% 0
+        }
+
+        100% {
+            background-position: 0 0
+        }
+    }
+</style>
 @section('content')
-<div class="container">
+<div class="container" >
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -62,4 +96,5 @@
         </div>
     </div>
 </div>
+
 @endsection

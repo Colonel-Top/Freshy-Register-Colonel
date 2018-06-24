@@ -334,7 +334,7 @@
 
                 <div class="col-md-5">
                     <div class="user__header" style="font-family: Kanit-Medium;">
-                        <h2 class="alert-warning breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">
+                        <h2 class="alert-info breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">
                             Search Data By Faculty</h2>
                         <form method="POST" action="{{route('searchfaculty')}}">
                             {{csrf_field()}}
@@ -353,7 +353,7 @@
                         </form>
                     </div>
                     <div class="user__header" style="font-family: Kanit-Medium;">
-                        <h2 class="alert-warning breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">
+                        <h2 class="alert-info breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">
                             Search Data By Code</h2>
                         <form method="POST" action="{{route('searchcode')}}">
                             {{csrf_field()}}
@@ -375,29 +375,18 @@
                 </div>
             </div>
         </div>
-        @if(Auth::user()->roles =="admin")
-            <div class="container">
-                <div class="user__header" style="font-family: Kanit-Medium;">
-
-                    <br><br>
-                    <button class="btn btn-success" type="button" onclick="goapp()">
-                        Staff Verification
-                    </button>
 
 
-                </div>
-            </div>
-        @endif
+        <div class="container">
+            <div class="user__header" style="font-family: Kanit-Medium;">
 
-            <div class="container">
-                <div class="user__header" style="font-family: Kanit-Medium;">
+                <br>
+                <div class="row">
 
-                    <br><br>
-
-                    <div class = "col-md-9">
+                    <div class="col-md-9">
                         <h2 class="alert-danger breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">
                             Last Activity Log</h2>
-                        <table class="table table-warning">
+                        <table class="table table-active">
                             <thead>
                             <tr>
                                 <th>ID</th>
@@ -409,14 +398,58 @@
                             </thead>
                             <tbody>
 
+                            @foreach ($lastlog as $single)
+                                <tr>
 
+                                    <td>{{$single->id}}</td>
+                                    <td>{{$single->activity}}</td>
+                                    <td>{{$single->created_at}}</td>
+
+
+                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
+                    <div class="col-md-3">
+                        <h2 class="alert-success breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">
+                            Entry Record</h2>
+
+                        <div>
+                            <h2>Register Counter</h2>
+                            <h2 class="alert-success " style="font-family: Kanit-Medium; font-size:20px; ;">
+                                {{$reg_amount}}</h2>
+                        </div>
 
 
+                        <div>
+                            <h2>Ticket Boarded </h2>
+                            <h2 class="alert-success  " style="font-family: Kanit-Medium; font-size:20px;">
+                                {{$board_amount}}</h2>
+                        </div>
+
+                        <div>
+                            <h2>Staff Entry</h2>
+                            <h2 class="alert-success  " style="font-family: Kanit-Medium; font-size:20px;">
+                                {{$staff_amount}}</h2>
+                        </div>
+                        <br>
+                        <div>
+                            @if(Auth::user()->roles =="admin")
+                                <button class="btn btn-success" type="button" onclick="goapp()" style="width:100%">
+                                    Staff Verification
+                                </button>
+                            @else
+                                <button class="btn btn-success" type="button" onclick="back()" style="width:100%">
+                                    Home
+                                </button>
+
+                            @endif
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
 
         <br>
         <div class="container">
@@ -485,6 +518,7 @@
 
         }
         var logouts = function () {
+
             window.location.href = "{{route('logouts')}}";
 
         }

@@ -296,7 +296,7 @@
                     </button>
                     <button class="btn" type="button" onclick="back()"><img src="{{asset('/consolextra.png')}}"
                                                                             style="width:30%;">
-                        Back
+                        Forget
                     </button>
                     <button class="btn" type="button"  onclick="register()"><img src="{{asset('/consoleo.png')}}"
                                                            style="width:30%;">
@@ -363,7 +363,7 @@
         }
 
         var back = function () {
-            window.location.href = "{{URL::to('/')}}";
+            window.location.href = "{{URL::to('/password/reset/')}}";
 
         }
         var register = function () {

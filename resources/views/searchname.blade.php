@@ -312,16 +312,8 @@
                             style="font-family: Kanit-Medium;">{{ Session::get('datacode') }}</h1>
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-3" style="text-align: left !important;">
-                                    <p>Name: </p>
-                                    <p>Surname: </p>
-                                    <p>Nickname: </p>
-                                    <p>Telephone: </p>
-                                    <p>Faculty: </p>
-                                    <p>Status: </p>
-                                    <p>Seat: </p>
-                                </div>
-                                <div class="col-md-9" style="text-align: left !important;">
+
+                                <div class="col-md-12" style="text-align: left !important;">
                                     @foreach( session()->get('data') as $data)
 
                                         <p>{{$data}}</p>

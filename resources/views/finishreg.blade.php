@@ -11,7 +11,7 @@
     body {
 
         background-size: 180% 100% !important;
-        animation:move2 1.521s ease-in-out forwards;
+        animation: move2 1.521s ease-in-out forwards;
         /*transform: translate3d(0, 0, 0);*/
         /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
         height: 100vh;
@@ -27,7 +27,6 @@
 
         height: 0px;
 
-
     }
 
     .user.open {
@@ -38,8 +37,6 @@
         padding: 3%;
 
         height: 100px;
-
-
 
         -webkit-transition: height 2.75s ease-in;
         -moz-transition: height 2.75s ease-in;
@@ -72,7 +69,7 @@
         text-align: center;
         opacity: 0;
         transform: translate3d(0, 500px, 0);
-       animation: arrive 400ms ease-in-out 0.6s forwards;
+        animation: arrive 400ms ease-in-out 0.6s forwards;
 
     }
 
@@ -94,7 +91,7 @@
         overflow: hidden;
         opacity: 0;
         transform: translate3d(0, 500px, 0);
-       animation: arrive 400ms ease-in-out 0.66s forwards;
+        animation: arrive 400ms ease-in-out 0.66s forwards;
     }
 
     .form.open {
@@ -104,7 +101,7 @@
         overflow: hidden;
 
         transform: translate3d(0, 500px, 0);
-       animation: arrive 400ms ease-in-out 0.66s forwards;
+        animation: arrive 400ms ease-in-out 0.66s forwards;
     }
 
     .form--NO {
@@ -182,8 +179,6 @@
     * {
         box-sizing: border-box
     }
-
-
 
     .space2px {
         font-family: GothamRounded-Light;
@@ -269,11 +264,11 @@
     <div class="container-fluid">
 
 
-        <div class="user" id ="user">
+        <div class="user" id="user">
             <header class="user__header ">
                 {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
-             <h1 class="user__title formheader"
-                                         style="letter-spacing: 10px;font-size:35px;">STUDENT</h1>
+                <h1 class="user__title formheader"
+                    style="letter-spacing: 10px;font-size:35px;">STUDENT</h1>
 
                 <div style="margin-bottom:10px;"></div>
                 {{--&nbsp;<h2 class="space2px"> FRESHY</h2>--}}
@@ -287,27 +282,31 @@
                 <br>
 
 
-
                 @if (Session::has('error'))
-                    <h2 class="alert-danger breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('error') }}</h2>
+                    <h2 class="alert-danger breadcrumb"
+                        style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('error') }}</h2>
                     <button class="btn" type="button" onclick="relog()"><img src="{{asset('/consoleX.png')}}"
-                                                                            style="width:30%;">
+                                                                             style="width:30%;">
                         Try Again
                     </button>
                 @endif
                 @if (Session::has('seatfull'))
-                    <h2 class="alert-secondary breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('seatfull') }}</h2>
+                    <h2 class="alert-secondary breadcrumb"
+                        style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('seatfull') }}</h2>
                 @endif
                 @if (Session::has('regdone'))
 
-                    <h1 class = "alert-dark formheader">{{ Session::get('code') }}</h1>
+                    <h1 class="alert-dark formheader">{{ Session::get('code') }}</h1>
                     <br>
-                    <h2 class="alert-success breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('regdone') }}</h2>
+                    <h2 class="alert-success breadcrumb"
+                        style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('regdone') }}</h2>
                     <br>
-                    <h2 class="alert-danger breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">กรุณา Capture หน้าจอ หรือจด Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน</h2>
+                    <h2 class="alert-danger breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">กรุณา Capture
+                        หน้าจอ หรือจด Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน</h2>
 
-                    <button class="btn" type="button" onclick="printDiv('user');"><img src="{{asset('/consoletri.png')}}"
-                                                                            style="width:30%;">
+                    <button class="btn" type="button" onclick="printDiv('user');"><img
+                                src="{{asset('/consoletri.png')}}"
+                                style="width:30%;">
                         Print Ticket
                     </button>
                 @endif
@@ -317,9 +316,6 @@
                     Home
                 </button>
             </div>
-
-
-
 
 
         </div>
@@ -344,12 +340,14 @@
         }
 
         var back = function () {
-            window.location.href = "{{URL::to('/')}}";
-
+            $("#gone").fadeOut("slow", function () {
+                window.location.href = "{{URL::to('/')}}";
+            });
         }
         var relog = function () {
-            window.location.href = "{{route('freshy')}}";
-
+            $("#gone").fadeOut("slow", function () {
+                window.location.href = "{{route('freshy')}}";
+            });
         }
 
 

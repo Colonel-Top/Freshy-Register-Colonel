@@ -52,7 +52,13 @@ class FreshyController extends Controller
             return view('welcome', ['lastlog' => $lastlog])->with(Session::flash('fullseat', 'Locked'));
         return view('welcome', ['lastlog' => $lastlog]);
     }
-
+    public function frontindex2()
+    {
+        $lastlog = DB::table('activity_log')->select('activity')->orderBy('id', 'desc')->take(1)->value('activity');
+        if ($reg_amount = Freshy::count() >= 100000)
+            return view('welcome', ['lastlog' => $lastlog])->with(Session::flash('fullseat', 'Locked'));
+        return view('welcome2', ['lastlog' => $lastlog]);
+    }
     public function done()
     {
         return view('finishreg');
@@ -96,27 +102,28 @@ class FreshyController extends Controller
         }
         $countsurname = strlen($userinfo['surname']);
         $result = array();
-        $result['name'] = $userinfo['name'];
-        $result['surname'] = substr($userinfo['surname'], 0, $countsurname / 4);
-        for ($i = $countsurname / 4; $i < $countsurname; $i++) {
-            $result['surname'] = $result['surname'] . "*";
-        }
-
-//        dd($result);
-
-        $result['nickname'] = $userinfo['nickname'];
-        $result['telephone'] = "No Telephone";
+        $result['name'] = "Name: ".$userinfo['name'];
+//        $result['surname'] = substr($userinfo['surname'], 0, $countsurname / 4);
+//        for ($i = $countsurname / 4; $i < $countsurname; $i++) {
+//            $result['surname'] = $result['surname'] . "*";
+//        }
+//
+////        dd($result);
+//        $result['surname'] = "Surname: ".$result['surname'];
+        $result['nickname'] = "Nickname: ".$userinfo['nickname'];
+        $result['telephone'] = "Telephone: "."No Telephone";
         if (!empty($userinfo['telephone'])) {
-            $result['telephone'] = substr($userinfo['telephone'], 0, 2) . "****" . substr($userinfo['telephone'], 6, 4);
+            $result['telephone'] = "Telephone: ".substr($userinfo['telephone'], 0, 2) . "****" . substr($userinfo['telephone'], 6, 4);
         }
 
-        $result['faculty'] = $userinfo['faculty'];
+        $result['faculty'] = "Faculty: ".$userinfo['faculty'];
         $ticket = Ticket::where('freshy_id', $userinfo['id'])->first();
-        $result['status'] = is_null($ticket) || empty($ticket) ? "Registered" : "Boarded";
-        if ($result['status'] == "Boarded")
-            $result['seat'] = $ticket['seat_id'];
+        $result['status'] = is_null($ticket) || empty($ticket) ? "Status: Registered" : "Status: Boarded";
+        if ($result['status'] == "Status: Boarded")
+            $result['seat'] = "SeatID: ".$ticket['seat_id'];
         else
-            $result['seat'] = "-";
+            $result['seat'] = "SeatID: -";
+
         $code = 'CODE FOUND! DON\'T LOSE AGAIN';
         $log = $result['nickname'] . " lost him/her code and found it now!";
         DB::table('activity_log')->insert(['activity' => $log, 'created_at' => Carbon::now()]);
@@ -133,27 +140,29 @@ class FreshyController extends Controller
             return redirect()->to(route('searchindex'))->withInput($searchdata)->with(Session::flash('error', 'No Result Found / ไม่พบผลลัพธ์ค้นหา'));
         $countsurname = strlen($userinfo['surname']);
         $result = array();
-        $result['name'] = $userinfo['name'];
-        $result['surname'] = substr($userinfo['surname'], 0, $countsurname / 4);
-        for ($i = $countsurname / 4; $i < $countsurname; $i++) {
-            $result['surname'] = $result['surname'] . "*";
-        }
+        $result['name'] = "Name: ".$userinfo['name'];
+        //$result['surname'] = "Surname: ".$userinfo['surname'];
+//        $result['surname'] = "Surname: ".$userinfo['surname'];
 
-//        dd($result);
 
-        $result['nickname'] = $userinfo['nickname'];
-        $result['telephone'] = "No Telephone";
+
+        $result['nickname'] = "Nickname: ".$userinfo['nickname'];
+        $result['telephone'] = "Telephone: "."No Telephone";
         if (!empty($userinfo['telephone'])) {
-            $result['telephone'] = substr($userinfo['telephone'], 0, 2) . "****" . substr($userinfo['telephone'], 6, 4);
+            $result['telephone'] = "Telephone: ".substr($userinfo['telephone'], 0, 2) . "****" . substr($userinfo['telephone'], 6, 4);
         }
 
-        $result['faculty'] = $userinfo['faculty'];
+        $result['faculty'] = "Faculty: ".$userinfo['faculty'];
         $ticket = Ticket::where('freshy_id', $userinfo['id'])->first();
-        $result['status'] = is_null($ticket) || empty($ticket) ? "Registered" : "Boarded";
-        if ($result['status'] == "Boarded")
-            $result['seat'] = $ticket['seat_id'];
+
+
+        $result['status'] = is_null($ticket) || empty($ticket) ? "Status: Registered" : "Status: Boarded";
+
+        if ($result['status'] == "Status: Boarded")
+            $result['seat'] = "SeatID: ".$ticket->seat_id;
         else
-            $result['seat'] = "-";
+            $result['seat'] = "SeatID: -";
+
         return redirect()->to(route('searchindex'))->withInput($searchdata)->with(Session::flash('result', 'Data Found!'))->with(['data' => $result]);
     }
 

@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Auth;
 use Session;
 use DB;
-
+use Carbon\Carbon;
 class LoginController extends Controller
 {
     /*
@@ -53,7 +53,7 @@ class LoginController extends Controller
 
         if (Auth::attempt($request->only($login_type, 'password'))) {
             $log = Auth::user()->name . " just logged in";
-            DB::table('activity_log')->insert(['activity' => $log]);
+            DB::table('activity_log')->insert(['activity'=>$log,'created_at'=> Carbon::now()]);
             return redirect()->intended($this->redirectPath());
         }
 

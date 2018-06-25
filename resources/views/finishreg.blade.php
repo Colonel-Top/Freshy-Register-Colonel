@@ -340,14 +340,14 @@
         }
 
         var back = function () {
-            $("#gone").fadeOut("slow", function () {
+
                 window.location.href = "{{URL::to('/')}}";
-            });
+
         }
         var relog = function () {
-            $("#gone").fadeOut("slow", function () {
+
                 window.location.href = "{{route('freshy')}}";
-            });
+
         }
 
 

@@ -47,22 +47,22 @@
 
     @font-face {
         font-family: Kanit-Medium;
-        src: url('{{ asset('fonts/Kanit-Medium.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/Kanit-Medium.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Bold;
-        src: url('{{ asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: Gotham-Ultra;
-        src: url('{{ asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Light;
-        src: url('{{ asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
     }
 
     .user__header {
@@ -285,7 +285,7 @@
                 @if (Session::has('error'))
                     <h2 class="alert-danger breadcrumb"
                         style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('error') }}</h2>
-                    <button class="btn" type="button" onclick="relog()"><img src="{{asset('/consoleX.png')}}"
+                    <button class="btn" type="button" onclick="relog()"><img src="{{secure_asset('/consoleX.png')}}"
                                                                              style="width:30%;">
                         Try Again
                     </button>
@@ -305,13 +305,13 @@
                         หน้าจอ หรือจด Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน</h2>
 
                     <button class="btn" type="button" onclick="printDiv('user');"><img
-                                src="{{asset('/consoletri.png')}}"
+                                src="{{secure_asset('/consoletri.png')}}"
                                 style="width:30%;">
                         Print Ticket
                     </button>
                 @endif
 
-                <button class="btn" type="button" onclick="back()"><img src="{{asset('/consoleo.png')}}"
+                <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consoleo.png')}}"
                                                                         style="width:30%;">
                     Home
                 </button>

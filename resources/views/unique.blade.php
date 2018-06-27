@@ -50,22 +50,22 @@
 
     @font-face {
         font-family: Kanit-Medium;
-        src: url('{{ asset('fonts/Kanit-Medium.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/Kanit-Medium.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Bold;
-        src: url('{{ asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: Gotham-Ultra;
-        src: url('{{ asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Light;
-        src: url('{{ asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
     }
 
     .user__header {
@@ -458,7 +458,7 @@
 
 
                             <button class="btn" type="button" onclick="back()">
-                                <img src="{{asset('/consolextra.png')}}" style="width:30px;">
+                                <img src="{{secure_asset('/consolextra.png')}}" style="width:30px;">
                                 Back
                             </button>
                         </row>

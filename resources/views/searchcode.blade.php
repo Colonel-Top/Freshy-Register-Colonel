@@ -47,22 +47,22 @@
 
     @font-face {
         font-family: Kanit-Medium;
-        src: url('{{ asset('fonts/Kanit-Medium.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/Kanit-Medium.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Bold;
-        src: url('{{ asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: Gotham-Ultra;
-        src: url('{{ asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Light;
-        src: url('{{ asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
     }
 
     .user__header {
@@ -288,16 +288,16 @@
                                value="{{old('search')}}" style="text-align: center;"/>
                     </div>
 
-                    <button class="btn" type="submit"><img src="{{asset('/consolex.png')}}"
+                    <button class="btn" type="submit"><img src="{{secure_asset('/consolex.png')}}"
                                                            style="width:30%;">
                         Search
                     </button>
 
-                    <button class="btn" type="button" onclick="back()"><img src="{{asset('/consolextra.png')}}"
+                    <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consolextra.png')}}"
                                                                             style="width:30%;">
                         Home
                     </button>
-                    <button class="btn" type="button" onclick="freshylogin()"><img src="{{asset('/consoletri.png')}}"
+                    <button class="btn" type="button" onclick="freshylogin()"><img src="{{secure_asset('/consoletri.png')}}"
                                                                                    style="width:30%;">
                         Login
                     </button>

@@ -351,22 +351,22 @@
 
     @font-face {
         font-family: Kanit-Medium;
-        src: url('{{ asset('fonts/Kanit-Medium.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/Kanit-Medium.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Bold;
-        src: url('{{ asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: Gotham-Ultra;
-        src: url('{{ asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Light;
-        src: url('{{ asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
     }
 
     .user__header {
@@ -710,39 +710,39 @@
 
                             @if(Session::has('fullseat'))
                                 <button class="btn fontthai" type="button" onclick="reg()"><img
-                                            src="{{asset('/consolex.png')}}"
+                                            src="{{secure_asset('/consolex.png')}}"
                                             style="width:30%;">
                                     ลงทะเบียน<i class="fa fa-lock" style="font-size: 20px;"></i>
                                 </button>
                             @else
                                 <button class="btn fontthai" type="button" onclick="reg()"><img
-                                            src="{{asset('/consolex.png')}}"
+                                            src="{{secure_asset('/consolex.png')}}"
                                             style="width:30%;">
                                     ลงทะเบียน
                                 </button>
                             @endif
                             <br>
                             <button class="btn fontthai" type="button" onclick="codesearch()"><img
-                                        src="{{asset('/consoleo.png')}}"
+                                        src="{{secure_asset('/consoleo.png')}}"
                                         style="width:30%;">
                                 เข้าสู่ระบบ / สถานะ
                             </button>
                             <br>
                             <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
-                                        src="{{asset('/consoletri.png')}}"
+                                        src="{{secure_asset('/consoletri.png')}}"
                                         style="width:30%;">
                                 ค้นหา Code
                             </button>
                             <br>
                             <button class="btn fontthai" type="button" onclick="login()"><img
-                                        src="{{asset('/consolextra.png')}}"
+                                        src="{{secure_asset('/consolextra.png')}}"
                                         style="width:30%;">
                                 Staff Login
                             </button>
                             <br>
                             <br>
                             <button class="btn fontthai" type="button" onclick="about()"><img
-                                        src="{{asset('/consolespecial.png')}}"
+                                        src="{{secure_asset('/consolespecial.png')}}"
                                         style="width:30%;">
                                 เกี่ยวกับระบบ
                             </button>
@@ -762,39 +762,39 @@
 
                             @if(Session::has('fullseat'))
                                 <button class="btn fontthai" type="button" onclick="reg()"><img
-                                            src="{{asset('/consolex.png')}}"
+                                            src="{{secure_asset('/consolex.png')}}"
                                             style="width:30%;">
                                     Register<i class="fa fa-lock" style="font-size: 20px;"></i>
                                 </button>
                             @else
                                 <button class="btn fontthai" type="button" onclick="reg()"><img
-                                            src="{{asset('/consolex.png')}}"
+                                            src="{{secure_asset('/consolex.png')}}"
                                             style="width:30%;">
                                     Register
                                 </button>
                             @endif
                             <br>
                             <button class="btn fontthai" type="button" onclick="codesearch()"><img
-                                        src="{{asset('/consoleo.png')}}"
+                                        src="{{secure_asset('/consoleo.png')}}"
                                         style="width:30%;">
                                 Login / Status
                             </button>
                             <br>
                             <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
-                                        src="{{asset('/consoletri.png')}}"
+                                        src="{{secure_asset('/consoletri.png')}}"
                                         style="width:30%;">
                                 Search Code
                             </button>
                             <br>
                             <button class="btn fontthai" type="button" onclick="login()"><img
-                                        src="{{asset('/consolextra.png')}}"
+                                        src="{{secure_asset('/consolextra.png')}}"
                                         style="width:30%;">
                                 Staff Login
                             </button>
                             <br>
                             <br>
                             <button class="btn fontthai" type="button" onclick="about()"><img
-                                        src="{{asset('/consolespecial.png')}}"
+                                        src="{{secure_asset('/consolespecial.png')}}"
                                         style="width:30%;">
                                 About Application
                             </button>

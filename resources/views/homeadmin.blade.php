@@ -60,22 +60,22 @@
 
     @font-face {
         font-family: Kanit-Medium;
-        src: url('{{ asset('fonts/Kanit-Medium.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/Kanit-Medium.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Bold;
-        src: url('{{ asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: Gotham-Ultra;
-        src: url('{{ asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Light;
-        src: url('{{ asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
+        src: url('{{ secure_asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
     }
 
     .user__header {
@@ -315,13 +315,13 @@
                                    style="text-align: center;" required/>
                             <input type="text" name="surname" placeholder="Surname" class="form__input"
                                    style="text-align: center;" required/>
-                            <button class="btn" type="submit"><img src="{{asset('/consolex.png')}}"
+                            <button class="btn" type="submit"><img src="{{secure_asset('/consolex.png')}}"
                                                                    style="width:30px;">
                                 Search
                             </button>
 
                             <button class="btn" type="button" onclick="logouts()"><img
-                                        src="{{asset('/consolextra.png')}}"
+                                        src="{{secure_asset('/consolextra.png')}}"
                                         style="width:30px;">
                                 Logout
                             </button>
@@ -344,7 +344,7 @@
                                            style="text-align: center;"/>
                                 </div>
                                 <div class="col-md-1">
-                                    <button class="btn" type="submit"><img src="{{asset('/consoletri.png')}}"
+                                    <button class="btn" type="submit"><img src="{{secure_asset('/consoletri.png')}}"
                                                                            style="width:30px;">
                                         Search
                                     </button>
@@ -363,7 +363,7 @@
                                            style="text-align: center;"/>
                                 </div>
                                 <div class="col-md-1">
-                                    <button class="btn" type="submit"><img src="{{asset('/consoleo.png')}}"
+                                    <button class="btn" type="submit"><img src="{{secure_asset('/consoleo.png')}}"
                                                                            style="width:30px;">
                                         Search
                                     </button>

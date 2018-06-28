@@ -284,7 +284,7 @@
                     {{csrf_field()}}
                     <div class="form__group">
                         {{--<label for="name">ชื่อ</label>--}}
-                        <input type="text" name="search" placeholder="Input your Code here" class="form__input" required
+                        <input type="text" name="search" placeholder="Freshy ID / Code" class="form__input" required
                                value="{{old('search')}}" style="text-align: center;"/>
                     </div>
 
@@ -292,10 +292,20 @@
                                                            style="width:30%;">
                         Search
                     </button>
+
                     <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consolextra.png')}}"
                                                                             style="width:30%;">
                         Home
                     </button>
+                    <button class="btn" type="button" onclick="freshylogin()"><img src="{{secure_asset('/consoletri.png')}}"
+                                                                                   style="width:30%;">
+                        Login
+                    </button>
+                    <br>
+                    <br>
+                    <br>
+
+
                     <br>
                     <br>
                     @if (Session::has('error'))
@@ -351,7 +361,10 @@
             window.location.href = "{{route('freshy')}}";
 
         }
+        var freshylogin = function () {
+            window.location.href = "{{route('freshyshowlogin')}}";
 
+        }
 
         function autoType(elementClass, typingSpeed) {
             var thhis = $(elementClass);

@@ -725,7 +725,7 @@
                             <button class="btn fontthai" type="button" onclick="codesearch()"><img
                                         src="{{secure_asset('/consoleo.png')}}"
                                         style="width:30%;">
-                                ค้นหาสถานะ
+                                เข้าสู่ระบบ / สถานะ
                             </button>
                             <br>
                             <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
@@ -777,7 +777,7 @@
                             <button class="btn fontthai" type="button" onclick="codesearch()"><img
                                         src="{{secure_asset('/consoleo.png')}}"
                                         style="width:30%;">
-                                Search Status
+                                Login / Status
                             </button>
                             <br>
                             <button class="btn fontthai" type="button" onclick="codelostsearch()"><img

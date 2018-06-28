@@ -28,9 +28,11 @@ Route::prefix('staff')->group(function () {
 
 
 });
+Route::post('/update', 'FreshyController@updatefreshy')->name('updatefreshy');
+Route::get('/freshylgn','FreshyController@showloginfreshy')->name('freshyshowlogin');
 Route::get('/about', 'FreshyController@about')->name('about');
 Route::get('/home', 'HomeController@index')->name('home');
-
+Route::post('/freshyid', 'FreshyController@showunique')->name('freshylogin');
 Route::get('/reg', 'FreshyController@index')->name('freshy');
 Route::get('/search', 'FreshyController@searchindex')->name('searchindex');
 Route::get('/searchlost', 'FreshyController@searchlostindex')->name('searchlostindex');

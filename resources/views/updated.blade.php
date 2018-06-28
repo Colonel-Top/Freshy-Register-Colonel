@@ -168,7 +168,7 @@
         }
 
         50% {
-            background-position: 10% 0
+            background-position: 100% 0
         }
 
         100% {
@@ -278,40 +278,43 @@
                 </h2>
             </header>
             <div class="user__header">
-                <br> &nbsp;<h2 class="alert-info newfriends breadcumb">STAFF LOGIN</h2>
-                <form action="{{ route('login') }}" class="form" style="text-align: center;" method="POST">
-                    @csrf
-                    <div class="form__group">
-                        {{--<label for="name">ชื่อ</label>--}}
-                        <input type="text" name="email" placeholder="Email/Username" class="form__input" required
-                               value="{{old('email')}}" style="text-align: center;"/>
-                        <input type="password" name="password" placeholder="Password" class="form__input" required
-                               value="{{old('password')}}" style="text-align: center;"/>
+                <br> &nbsp;<h2 class="newfriends">@if (Session::has('regdone'))รหัส@endifลงทะเบียนรับเพื่อนใหม่</h2>
+                <br>
 
-                    </div>
 
-                    <button class="btn" type="submit"><img src="{{secure_asset('/consoletri.png')}}"
-                                                           style="width:30%;">
-                        Login
+                @if (Session::has('error'))
+                    <h2 class="alert-danger breadcrumb"
+                        style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('error') }}</h2>
+                    <button class="btn" type="button" onclick="relog()"><img src="{{secure_asset('/consoleX.png')}}"
+                                                                             style="width:30%;">
+                        Try Again
                     </button>
-                    <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consolextra.png')}}"
-                                                                            style="width:30%;">
-                        Forget
-                    </button>
-                    <button class="btn" type="button"  onclick="register()"><img src="{{secure_asset('/consoleo.png')}}"
-                                                           style="width:30%;">
-                        Verify
-                    </button>
+                @endif
+                @if (Session::has('seatfull'))
+                    <h2 class="alert-secondary breadcrumb"
+                        style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('seatfull') }}</h2>
+                @endif
+                @if (Session::has('code'))
+
+                    <h1 class="alert-dark formheader">{{ Session::get('code') }}</h1>
                     <br>
+                    <h2 class="alert-success breadcrumb"
+                        style="font-family: Kanit-Medium; font-size:16px;">Code:{{ Session::get('code') }} Successfully Updated</h2>
                     <br>
-                    @if (Session::has('error'))
-                        <h2 class="alert-danger breadcrumb"
-                            style="font-family: Kanit-Medium; font-size:16px; ">{{ Session::get('error') }}</h2>
-                    @endif
+                    <h2 class="alert-warning breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">การ Update ข้อมูลเสร็จสมบูรณ์ กรุณาอย่าลืม Capture
+                        หน้าจอ หรือจด Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน</h2>
 
+                    <button class="btn" type="button" onclick="printDiv('user');"><img
+                                src="{{secure_asset('/consoletri.png')}}"
+                                style="width:30%;">
+                        Print
+                    </button>
+                @endif
 
-
-                </form>
+                <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consoleo.png')}}"
+                                                                        style="width:30%;">
+                    Home
+                </button>
             </div>
 
 
@@ -337,11 +340,13 @@
         }
 
         var back = function () {
-            window.location.href = "{{URL::to('/password/reset/')}}";
+
+                window.location.href = "{{URL::to('/')}}";
 
         }
-        var register = function () {
-            window.location.href = "{{route('register')}}";
+        var relog = function () {
+
+                window.location.href = "{{route('freshyshowlogin')}}";
 
         }
 

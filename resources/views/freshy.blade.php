@@ -326,11 +326,17 @@
                     <select class="form__input" id="gender" name="gender" required default="{{old('gender')}}">
                         <option value="" selected disabled>*เพศ / Gender</option>
                         <option value="male">ชาย / Male</option>
-                        <option value="female">หญิง / Femail</option>
+                        <option value="female">หญิง / Female</option>
                         <option value="other">อื่นๆ / Other</option>
                     </select>
 
                     {{--<input type="text" name="gender" placeholder="เพศ" class="form__input"/>--}}
+                </div>
+
+                <div class="form__group">
+                    {{--<label for="name">ชื่อ</label>--}}
+                    <input type="number" name="cardid" placeholder="*เลขบัตรประชาชน / PassportID" class="form__input" required
+                           value="{{old('cardid')}}"/>
                 </div>
                 <div class="form__group">
                     {{--<label for="name">ชื่อ</label>--}}

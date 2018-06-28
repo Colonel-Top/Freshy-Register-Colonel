@@ -20,6 +20,7 @@ class Freshy extends Migration
             $table->text('name');
             $table->text('surname');
             $table->text('nickname');
+            $table->text('cardid');
             $table->text('gender');
             $table->text('faculty');
             $table->text('telephone');

@@ -18,7 +18,7 @@ class Freshy extends Model
      * @var array
      */
     protected $fillable = [
-        'name','surname','nickname','gender','faculty','telephone','line','facebook','religion','disfood','vegetarian','islamic','disease','disdrug','sosname','sossurname','sosrelationship','sostel1','sostel2',
+        'id','name','surname','nickname','gender','cardid','faculty','telephone','line','facebook','religion','disfood','vegetarian','islamic','disease','disdrug','sosname','sossurname','sosrelationship','sostel1','sostel2',
     ];
 
 }

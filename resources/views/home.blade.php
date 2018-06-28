@@ -45,7 +45,7 @@
                         @endif
 
 
-                        <button class="btn" type="button" onclick="logoutuser()"><img src="{{secure_asset('/consoletri.png')}}"
+                        <button class="btn" type="button" onclick="logoutuser()"><img src="{{asset('/consoletri.png')}}"
                                                                                       style="width:30%;">
                             Logout
                         </button>

@@ -60,22 +60,22 @@
 
     @font-face {
         font-family: Kanit-Medium;
-        src: url('{{ secure_asset('fonts/Kanit-Medium.otf')}}') format("opentype");
+        src: url('{{ asset('fonts/Kanit-Medium.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Bold;
-        src: url('{{ secure_asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
+        src: url('{{ asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: Gotham-Ultra;
-        src: url('{{ secure_asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
+        src: url('{{ asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Light;
-        src: url('{{ secure_asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
+        src: url('{{ asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
     }
 
     .user__header {
@@ -322,7 +322,7 @@
                             <form method="POST" action="{{route('freshy-reg')}}">
                                 {{csrf_field()}}
                                 <input type="hidden" name="data" value="{{ serialize($request->all()) }}">
-                                <button class="btn" type="submit"><img src="{{secure_asset('/consoletri.png')}}"
+                                <button class="btn" type="submit"><img src="{{asset('/consoletri.png')}}"
                                                                        style="width:30px;">
                                     Confirm
                                 </button>
@@ -332,14 +332,14 @@
                             <form method="POST" action="{{route('redirectback',$request)}}">
                                 {{csrf_field()}}
                                 <input type="hidden" name="data" value="{{ serialize($request->all()) }}">
-                                <button class="btn" type="submit"><img src="{{secure_asset('/consoleo.png')}}"
+                                <button class="btn" type="submit"><img src="{{asset('/consoleo.png')}}"
                                                                        style="width:30px;">
                                     Edit
                                 </button>
                             </form>
                             <br>
 
-                                <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consolex.png')}}"
+                                <button class="btn" type="button" onclick="back()"><img src="{{asset('/consolex.png')}}"
                                                                        style="width:30px;">
                                     Cancel
                                 </button>

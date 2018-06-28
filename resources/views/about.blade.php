@@ -60,22 +60,22 @@
 
     @font-face {
         font-family: Kanit-Medium;
-        src: url('{{ secure_asset('fonts/Kanit-Medium.otf')}}') format("opentype");
+        src: url('{{ asset('fonts/Kanit-Medium.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Bold;
-        src: url('{{ secure_asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
+        src: url('{{ asset('fonts/GothamRounded-Bold.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: Gotham-Ultra;
-        src: url('{{ secure_asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
+        src: url('{{ asset('fonts/Gotham-Ultra.otf')}}') format("opentype");
     }
 
     @font-face {
         font-family: GothamRounded-Light;
-        src: url('{{ secure_asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
+        src: url('{{ asset('fonts/GothamRounded-Light.otf')}}') format("opentype");
     }
 
     .user__header {
@@ -359,7 +359,7 @@
             </div>
         </div>
         <div class="user__header" style="font-family: Kanit-Medium;">
-            <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consolex.png')}}"
+            <button class="btn" type="button" onclick="back()"><img src="{{asset('/consolex.png')}}"
                                                                     style="width:30px;">
                 Back
             </button>

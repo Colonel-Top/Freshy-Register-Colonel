@@ -332,6 +332,12 @@
 
                     {{--<input type="text" name="gender" placeholder="เพศ" class="form__input"/>--}}
                 </div>
+
+                <div class="form__group">
+                    {{--<label for="name">ชื่อ</label>--}}
+                    <input type="text" name="cardid" placeholder="*เลขบัตรประชาชน / PassportID" class="form__input" required
+                           value="{{old('cardid')}}"/>
+                </div>
                 <div class="form__group">
                     {{--<label for="name">ชื่อ</label>--}}
 

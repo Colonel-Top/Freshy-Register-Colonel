@@ -278,15 +278,15 @@
                 </h2>
             </header>
             <div class="user__header">
-                <br> &nbsp;<h2 class="alert-info newfriends breadcumb">STAFF LOGIN</h2>
-                <form action="{{ route('login') }}" class="form" style="text-align: center;" method="POST">
-                    @csrf
+                <br> &nbsp;<h2 class="alert-info newfriends breadcumb">Freshy Info LOGIN</h2>
+                <form action="{{ route('freshylogin') }}" class="form" style="text-align: center;" method="POST">
+                    {{csrf_field()}}
                     <div class="form__group">
                         {{--<label for="name">ชื่อ</label>--}}
-                        <input type="text" name="email" placeholder="Email/Username" class="form__input" required
-                               value="{{old('email')}}" style="text-align: center;"/>
-                        <input type="password" name="password" placeholder="Password" class="form__input" required
-                               value="{{old('password')}}" style="text-align: center;"/>
+                        <input type="text" name="freshy_id" placeholder="รหัส / Freshy  Code" class="form__input" required
+                               value="{{old('freshy_id')}}" style="text-align: center;"/>
+                        <input type="password" name="cardid" placeholder="เลขบัตรประชาชน / PassportID" class="form__input" required
+                               value="{{old('freshy_id')}}" style="text-align: center;"/>
 
                     </div>
 
@@ -294,13 +294,10 @@
                                                            style="width:30%;">
                         Login
                     </button>
-                    <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consolextra.png')}}"
-                                                                            style="width:30%;">
-                        Forget
-                    </button>
+
                     <button class="btn" type="button"  onclick="register()"><img src="{{secure_asset('/consoleo.png')}}"
                                                            style="width:30%;">
-                        Verify
+                        Back
                     </button>
                     <br>
                     <br>
@@ -308,7 +305,7 @@
                         <h2 class="alert-danger breadcrumb"
                             style="font-family: Kanit-Medium; font-size:16px; ">{{ Session::get('error') }}</h2>
                     @endif
-
+                   
 
 
                 </form>
@@ -341,7 +338,7 @@
 
         }
         var register = function () {
-            window.location.href = "{{route('register')}}";
+            window.location.href = "{{route('searchindex')}}";
 
         }
 

@@ -304,7 +304,7 @@
                                 <p>Telephone: {{$request->telephone}}</p>
                                 <p>Faculty:<br> {{$request->faculty}}</p>
                                 <p>Gender: {{$request->gender}}</p>
-
+                                <p>Gender: {{$request->cardid}}</p>
                                 @if($request->islamic == 1)
                                     <p class="alert-danger breadcrumb">
                                         Islamic Food</p>

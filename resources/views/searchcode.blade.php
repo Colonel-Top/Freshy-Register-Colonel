@@ -288,12 +288,12 @@
                                value="{{old('search')}}" style="text-align: center;"/>
                     </div>
 
-                    <button class="btn" type="submit"><img src="{{secure_asset('/consolex.png')}}"
+                    <button class="btn" type="submit"><img src="{{secure_asset('/consoleo.png')}}"
                                                            style="width:30%;">
                         Search
                     </button>
 
-                    <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consolextra.png')}}"
+                    <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consolex.png')}}"
                                                                             style="width:30%;">
                         Home
                     </button>

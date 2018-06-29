@@ -335,7 +335,7 @@
                         <option value="" selected disabled>*เพศ</option>
                         <option value="male">ชาย</option>
                         <option value="female">หญิง</option>
-                        <option value="other">ทางเลือก / LGBTQ</option>
+                        {{--<option value="other">ทางเลือก / LGBTQ</option>--}}
                     </select>
 
                     {{--<input type="text" name="gender" placeholder="เพศ" class="form__input"/>--}}

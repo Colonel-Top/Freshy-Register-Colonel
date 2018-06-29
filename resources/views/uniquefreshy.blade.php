@@ -331,7 +331,7 @@
                 </div>
                 <div class="form__group">
                     <label for="name">*Gender</label>
-                    <select class="form__input" id="gender" name="gender"  required default="{{old('gender')}}">
+                    <select class="form__input" id="gender" name="gender"  required default="{{old('gender')}}" style="border: 1px solid rgba(0, 0, 0, 1);">
                         <option value="" selected disabled>*เพศ</option>
                         <option value="male">ชาย</option>
                         <option value="female">หญิง</option>
@@ -343,7 +343,7 @@
                 <div class="form__group">
                     <label for="name">*Faculty</label>
 
-                    <select class="form__input" id="faculty" name="faculty"  required default="{{old('faculty')}}">
+                    <select class="form__input" id="faculty" name="faculty"  required default="{{old('faculty')}}" style="border: 1px solid rgba(0, 0, 0, 1);">
                         <option value="" selected disabled>*คณะ</option>
                         <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
                         <option value="คณะพาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี</option>
@@ -393,7 +393,7 @@
                 <div class="form__group">
                     <label for="name">*Religion</label>
 
-                    <select class="form__input" name="religion" id="religion"  required>
+                    <select class="form__input" name="religion" id="religion"  required style="border: 1px solid rgba(0, 0, 0, 1);">
                     <option value="" selected disabled>*ศาสนา</option>
                     <option value="buddhist">พุทธ</option>
                     <option value="christian">คริสต์</option>

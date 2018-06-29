@@ -335,7 +335,7 @@
                         <option value="" selected disabled>*เพศ</option>
                         <option value="male">ชาย</option>
                         <option value="female">หญิง</option>
-                        <option value="other">อื่นๆ</option>
+                        <option value="other">ทางเลือก / LGBTQ</option>
                     </select>
 
                     {{--<input type="text" name="gender" placeholder="เพศ" class="form__input"/>--}}
@@ -419,7 +419,7 @@
                     {{--<label for="name">ชื่อ</label>--}}
                     <row>
 
-                        <input type="checkbox" name="vegetarian" value="1" {{($data2->vegetarian) ? " checked" : ""}}  /> มังสวิรัติ / Vegetarian<br>
+                        <input type="checkbox" name="vegetarian" value="1" {{($data2->vegetarian) ? " checked" : ""}}  /> อาหารเจ / Vegan<br>
                         <input type="checkbox" name="islamic" value="1"  {{($data2->islamic) ? " checked" : ""}}  /> อาหารอิสลาม / Islam Food<br>
                     </row>
                 </div>

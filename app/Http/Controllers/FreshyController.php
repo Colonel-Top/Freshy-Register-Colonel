@@ -126,7 +126,7 @@ class FreshyController extends Controller
         else
             $result['seat'] = "SeatID: -";
 
-        $code = 'CODE FOUND! DON\'T LOSE AGAIN';
+        $code = 'CODE FOUND, DON\'T LOSE IT AGAIN';
         $log = $userinfo['nickname'] . " lost him/her code and found it now!";
         DB::table('activity_log')->insert(['activity' => $log, 'created_at' => Carbon::now()]);
         return redirect()->to(route('searchlostindex'))->withInput($searchdata)->with(Session::flash('result', $code))->with(['data' => $result])->with(Session::flash('datacode', $userinfo['id']));

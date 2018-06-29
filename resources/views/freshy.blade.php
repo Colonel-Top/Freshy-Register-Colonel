@@ -321,9 +321,9 @@
                     <input type="text" name="nickname" placeholder="*ชื่อเล่น / Nickname" class="form__input" required
                            value="{{old('nickname')}}"/>
                 </div>
-                <div class="form__group" style="border: 2px solid rgba(0, 0, 0, 1);">
+                <div class="form__group" >
                     {{--<label for="name">ชื่อ</label>--}}
-                    <select class="form__input" id="gender" name="gender" required default="{{old('gender')}}">
+                    <select class="form__input" id="gender" name="gender" required default="{{old('gender')}}" style="border: 1px solid rgba(0, 0, 0, 1);">
                         <option value="" selected disabled>*เพศ / Gender</option>
                         <option value="male">ชาย / Male</option>
                         <option value="female">หญิง / Female</option>
@@ -338,10 +338,10 @@
                     <input type="number" name="cardid" placeholder="*เลขบัตรประชาชน / PassportID" class="form__input" required
                            value="{{old('cardid')}}"/>
                 </div>
-                <div class="form__group" style="border: 2px solid rgba(0, 0, 0, 1);">
+                <div class="form__group" >
                     {{--<label for="name">ชื่อ</label>--}}
 
-                    <select class="form__input" id="faculty" name="faculty" required default="{{old('faculty')}}">
+                    <select class="form__input" id="faculty" name="faculty" required default="{{old('faculty')}}" style="border: 1px solid rgba(0, 0, 0, 1);">
                         <option value="" selected disabled>*คณะ / Faculty</option>
                         <option value="คณะนิติศาสตร์">คณะนิติศาสตร์ / Faculty of Law</option>
                         <option value="คณะพาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี / Faculty of Commerce and
@@ -408,10 +408,10 @@
                     <input type="text" name="facebook" placeholder="Facebook" class="form__input"
                            value="{{old('facebook')}}"/>
                 </div>
-                <div class="form__group" style="border: 2px solid rgba(0, 0, 0, 1);">
+                <div class="form__group" >
                     {{--<label for="name">ชื่อ</label>--}}
 
-                    <select class="form__input" name="religion" id="religion" required default="{{old('religion')}}">
+                    <select class="form__input" name="religion" id="religion" required default="{{old('religion')}}" style="border: 1px solid rgba(0, 0, 0, 1);">
                         <option value="" selected disabled>*ศาสนา / Religion</option>
                         <option value="buddhist">พุทธ / Buddhist</option>
                         <option value="christian">คริสต์ / Christian</option>
@@ -437,7 +437,7 @@
                     {{--<label for="name">ชื่อ</label>--}}
                     <row>
                         <input type="checkbox" name="vegetarian" value="1"
-                               class="" {{ (! empty(old('vegetarian')) ? 'checked' : '') }}>อาหารเจ / Vegetarian<br>
+                               class="" {{ (! empty(old('vegetarian')) ? 'checked' : '') }}>อาหารเจ / Vegan<br>
                         <input type="checkbox" name="islamic" value="1"
                                class="" {{ (! empty(old('islamic')) ? 'checked' : '') }}>อาหารอิสลาม / Halal<br>
                     </row>

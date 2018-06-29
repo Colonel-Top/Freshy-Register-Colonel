@@ -325,8 +325,8 @@
                     {{--<label for="name">ชื่อ</label>--}}
                     <select class="form__input" id="gender" name="gender" required default="{{old('gender')}}" style="border: 1px solid rgba(0, 0, 0, 1);">
                         <option value="" selected disabled>*เพศ / Gender</option>
-                        <option value="male">ชาย / Male</option>
-                        <option value="female">หญิง / Female</option>
+                        <option value="ชาย">ชาย / Male</option>
+                        <option value="หญิง">หญิง / Female</option>
                         {{--<option value="other">ทางเลือก / LGBTQ</option>--}}
                     </select>
 

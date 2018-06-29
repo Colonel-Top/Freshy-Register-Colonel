@@ -328,8 +328,8 @@
                     {{--<label for="name">ชื่อ</label>--}}
                     <select class="form__input" id="gender" name="gender"  disabled readonly default="{{old('gender')}}">
                         <option value="" selected disabled>*เพศ</option>
-                        <option value="male">ชาย</option>
-                        <option value="female">หญิง</option>
+                        <option value="ชาย">ชาย</option>
+                        <option value="หญิง">หญิง</option>
                         <option value="other">อื่นๆ</option>
                     </select>
 

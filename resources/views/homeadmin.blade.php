@@ -463,6 +463,7 @@
                             <th>Firstname</th>
                             <th>Lastname</th>
                             <th>Faculty</th>
+                            <th>Gender</th>
                             <th>Code</th>
 
                         </tr>
@@ -475,6 +476,7 @@
                                 <td>{{$single->name}}</td>
                                 <td>{{$single->surname}}</td>
                                 <td>{{$single->faculty}}</td>
+                                <td>{{$single->gender}}</td>
                                 <td><a href="{{route('showunique',$single->id)}}"
                                        class="label label-success">{{$single->id}}</a></td>
 

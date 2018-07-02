@@ -292,7 +292,7 @@
 
         .user {
             width: auto;
-            /*max-width: 465px;*/
+            max-width: 1465px;
             /*margin: 10vh auto;*/
 
             padding: 3%;
@@ -705,7 +705,7 @@
                 <br>
                 <div id="th" class="th ">
 
-                    <div class="user__header" style="    margin-left: -57%;">
+                    <div class="user__header" style="    margin-left: -17%;">
 
                         @if(Session::has('fullseat'))
                             <button class="btn fontthai" type="button" onclick="reg()"><img

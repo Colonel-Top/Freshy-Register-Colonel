@@ -218,7 +218,10 @@ class FreshyController extends Controller
         DB::table('activity_log')->insert(['activity' => $log, 'created_at' => Carbon::now()]);
         return view('updated', ['code' => $request->id])->with(Session::flash('code',$request->id));
     }
-
+    public function showagreement()
+    {
+        return view('prereg');
+    }
     public function insert(Request $requests)
     {
         $request = unserialize($requests->data);
@@ -253,7 +256,7 @@ class FreshyController extends Controller
         }
 
         $tmp = $freshy->id;
-        $log = $request['nickname'] . " just landing Thammasat University 1st time!";
+        $log = $request['nickname'] . " just landing Thammasat !";
         DB::table('activity_log')->insert(['activity' => $log, 'created_at' => Carbon::now()]);
         return redirect()->intended(route('freshy-done'))->with(Session::flash('regdone', 'Your registration Completed'))->with(Session::flash('code', $tmp));
 

@@ -288,6 +288,9 @@
                 <br>
                 <h2 class="alert-danger breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">*Required
                     (ต้องกรอก)</h2>
+
+                <h2 class="alert-danger breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">
+                *If you are a foreign person, please use English to fill in the form.</h2>
                 <br>
                 <ul class="alert-info breadcrumb"
                     style="text-align: center; font-weight: bold; font-family: GothamRounded-Light;">
@@ -492,11 +495,11 @@
                 <div style="font-size:21px;">
                     <div style="margin-top:15px;">
                         <row>
-                            <button class="btn" type="submit"><img src="{{secure_asset('/consoletri.png')}}"
+                            <button class="btn" type="submit"><img src="{{secure_asset('/consoleo.png')}}"
                                                                    style="width:30px;"> Register
                             </button>
 
-                            <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consoleo.png')}}"
+                            <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consoletri.png')}}"
                                                                                     style="width:30px;">
                                 Back
                             </button>

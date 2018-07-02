@@ -301,6 +301,8 @@
                     <br>
                     <div class="container">
                         <br>
+                        <img src="{{secure_asset('/TUSU-LOGO.png')}}" style="width:60%;">
+                        <br>
                         Website Scope
                         <br><br>
                         Website purpose:<br>
@@ -318,6 +320,8 @@
                 <div class="user__header" style="font-family: Kanit-Medium; text-align: right;">
                     <br>
                     <div class="container">
+                        <br>
+                        <img src="{{secure_asset('/Col.png')}}" style="width:30%;">
                         <br>
                         Developer Scope
                         <br><br>

@@ -28,6 +28,7 @@ Route::prefix('staff')->group(function () {
 
 
 });
+Route::get('/agreement','FreshyController@showagreement')->name('agreement');
 Route::post('/update', 'FreshyController@updatefreshy')->name('updatefreshy');
 Route::get('/freshylgn','FreshyController@showloginfreshy')->name('freshyshowlogin');
 Route::get('/about', 'FreshyController@about')->name('about');

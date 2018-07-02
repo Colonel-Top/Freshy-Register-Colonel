@@ -294,64 +294,68 @@
             <div class="user__header" style="font-family: Kanit-Medium;">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-10" style="text-align:left;">
-                            <h2 class="alert-info breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">
-                                Please Check your Information</h2>
-                            <div class="">
-                                <p>Name: {{$request->name}}</p>
-                                <p>Surname: {{$request->surname}}</p>
-                                <p>Nickname: {{$request->nickname}}</p>
-                                <p>Telephone: {{$request->telephone}}</p>
-                                <p>Faculty:<br> {{$request->faculty}}</p>
-                                <p>Gender:
-                                    {{$request->gender}}
-                                    @if($request->gender =="ชาย")
-                                        / Male
-                                    @else
-                                        / Female
-                                    @endif
-                                </p>
-                                <p>Citizen / Passport ID: {{$request->cardid}}</p>
-                                @if($request->islamic == 1)
-                                    <p class="alert-danger breadcrumb">
-                                        Islamic Food</p>
-                                @endif
-                                @if($request->vegetarian == 1)
-                                    <p class="alert-danger breadcrumb">
-                                        Vegetarian Food</p>
-                                @endif
+                        <div class="col-md-12" style="text-align:left; overflow-y:visible;">
+                            <h2 class="alert-warning breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">
+                                Please Read Agreement</h2>
+                            <p style="overflow: auto; height:300px;">English Please Scroll down<br><br>เงื่อนไขการกรอกฟอร์ม
+                                <br>
+                                <br>
+                                จะต้องกรอกข้อมูลลงในฟอร์มตามแบบที่ให้ข้อมูลกับทางมหาวิทยาลัยเพื่อประโยชน์ตัวท่านเอง
+                                การกรอกข้อมูลใดอันเป็นเท็จ เจ้าหน้าที่ พี่เลี้ยง พี่สต๊าฟ ผู้ดูแลระบบ
+                                จะไม่รับผิดชอบ ในความผิดพลาดของข้อมูลที่กรอกที่เกิดขึ้น ทั้งนี้
+                                นักศึกษาสามารถเข้าไปแก้ไขข้อมูลได้โดยใช้รหัสการจองและเลขบัตรประชาชนเป็นรหัสผ่านในหน้าเมนู
+                                เข้าสู่ระบบได้
+                                ทางผู้เก็บข้อมูลจะขอสงวนสิทธิ์ข้อมูลไว้เพื่อความปลอดภัยและประโยชน์ของตัวนักศึกษาเองอย่างสูงสุดโดยถูกต้องตามกฏหมายราชอาณาจักรไทยฉบับปี พ.ศ.๒๕๖๐
+                                โดยระบบมีการเข้ารหัสเพื่อรองรับความปลอดภัยของข้อมูลเป็นที่เรียบร้อย
+                                <br> <br>
+                                "เป็นคนไทยกรุณากรอกข้อมูลด้วยภาษาไทย"<br><br>หากข้อมูลส่วนใดที่ท่านไม่มีกรุณาใส่ ขีด/dash
+                                ด้วยสัญลักษณ์ - <br>หากมีปัญหากรุณาติดต่อ P'Staff
+                                <br>
+                                การกดปุ่ม Register ถือเป็นการยอมรับและได้รับทราบตามข้อตกลง/บทความข้างต้นแล้ว
+                                <br>
+                                <br>
+                                Please Read before filling the form
+                                <br>
+                                <br>
+                                You need to fill the form with data that you provided same as university. any fault,
+                                mistake, wrong information our team will not take any responsibility this is your
+                                benefits when any accident could occur. After register you can login @ Main menu to
+                                update your information any time.<br>
+                                We reserve the right to secure your information for your security and safety under the
+                                law of Thailand 2018. We also encrypt your data which happen on this website. that's
+                                mean all information will be safe here. Any problem please Contact Staff Team
+                                <br>
+                                <br>
+                                *If you are a foreigner, please use English to fill in the form.<br>
+                                *Any Information that you don't have, please insert dash ( - )<br>
+                                *(*) Meaning of Required
+                                <br><br>
+                                By Clicking Register button mean that you are accept agreement and acknowledge this information
+                            </p>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+
+                        <div class="row" style="text-align: center;">
+                            <div class="col-md-6">
+                                <button class="btn" type="button" onclick="reg()"><img
+                                            src="{{secure_asset('/consoletri.png')}}"
+                                            style="width:30px;">
+                                    Register
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn" type="button" onclick="back()"><img
+                                            src="{{secure_asset('/consolextra.png')}}"
+                                            style="width:30px;">
+                                    Cancel
+                                </button>
                             </div>
                         </div>
-                        <div class="col-md-2 ">
-                            <br>
-                            <br>
-                            <br>
-                            <form method="POST" action="{{route('freshy-reg')}}">
-                                {{csrf_field()}}
-                                <input type="hidden" name="data" value="{{ serialize($request->all()) }}">
-                                <button class="btn" type="submit"><img src="{{secure_asset('/consoleo.png')}}"
-                                                                       style="width:30px;">
-                                    Confirm
-                                </button>
+                        <br><br>
 
-                            </form>
-                            <br>
-                            <form method="POST" action="{{route('redirectback',$request)}}">
-                                {{csrf_field()}}
-                                <input type="hidden" name="data" value="{{ serialize($request->all()) }}">
-                                <button class="btn" type="submit"><img src="{{secure_asset('/consoletri.png')}}"
-                                                                       style="width:30px;">
-                                    Edit
-                                </button>
-                            </form>
-                            <br>
-
-                            <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consolex.png')}}"
-                                                                                    style="width:30px;">
-                                Cancel
-                            </button>
-                            <br><br>
-                        </div>
                     </div>
                 </div>
 
@@ -389,8 +393,8 @@
             window.location.href = "{{URL::to('/')}}";
 
         }
-        var relog = function () {
-            window.location.href = "{{URL::to('/colonel')}}";
+        var reg = function () {
+            window.location.href = "{{route('freshy')}}";
 
         }
 

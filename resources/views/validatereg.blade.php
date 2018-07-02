@@ -203,7 +203,7 @@
 
     .btn {
 
-        width: 35%;
+        /*width: 35%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -217,7 +217,7 @@
 
     .btn:hover {
 
-        width: 35%;
+        /*width: 35%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -330,7 +330,7 @@
                                 {{csrf_field()}}
                                 <input type="hidden" name="data" value="{{ serialize($request->all()) }}">
                                 <button class="btn" type="submit"><img src="{{secure_asset('/consoleo.png')}}"
-                                                                       style="width:30px;">
+                                                                       class="imagebutton">
                                     Confirm
                                 </button>
 
@@ -340,18 +340,18 @@
                                 {{csrf_field()}}
                                 <input type="hidden" name="data" value="{{ serialize($request->all()) }}">
                                 <button class="btn" type="submit"><img src="{{secure_asset('/consoletri.png')}}"
-                                                                       style="width:30px;">
+                                                                       class="imagebutton">
                                     Edit
                                 </button>
                             </form>
                             <br>
 
                             <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consolex.png')}}"
-                                                                                    style="width:30px;">
+                                                                                   class="imagebutton">
                                 Cancel
                             </button>
                             <br><br><br><br>
-                            .
+
                         </div>
                     </div>
                 </div>

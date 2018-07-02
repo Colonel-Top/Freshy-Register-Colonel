@@ -203,7 +203,7 @@
 
     .btn {
 
-        width: 35%;
+        /*width: 35%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -217,7 +217,7 @@
 
     .btn:hover {
 
-        width: 35%;
+        /*width: 35%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -269,7 +269,10 @@
             opacity: 0;
         }
     }
-
+    .imagebutton
+    {
+        width:27px;
+    }
 
 </style>
 @section('content')
@@ -342,14 +345,14 @@
                             <div class="col-md-6">
                                 <button class="btn" type="button" onclick="reg()"><img
                                             src="{{secure_asset('/consoletri.png')}}"
-                                            style="width:30px;">
+                                            class="imagebutton">
                                     Register
                                 </button>
                             </div>
                             <div class="col-md-6">
                                 <button class="btn" type="button" onclick="back()"><img
                                             src="{{secure_asset('/consolextra.png')}}"
-                                            style="width:30px;">
+                                            class="imagebutton">
                                     Cancel
                                 </button>
                             </div>

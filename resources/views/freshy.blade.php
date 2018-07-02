@@ -193,7 +193,7 @@
 
     .btn {
 
-        width: 30%;
+        /*width: 30%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -207,7 +207,7 @@
 
     .btn:hover {
 
-        width: 30%;
+        /*width: 30%;*/
 
         -webkit-appearance: none;
         outline: 0;

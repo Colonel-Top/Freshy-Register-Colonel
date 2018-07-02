@@ -336,8 +336,8 @@
 
                             </form>
                             <br>
-                            {{dd($request)}}
-                            <form method="POST" action="{{route('redirectback',$request)}}">
+
+                            <form method="POST" action="{{route('redirectback')}}">
                                 {{csrf_field()}}
                                 <input type="hidden" name="data" value="{{ serialize($request->all()) }}">
                                 <button class="btn" type="submit"><img src="{{secure_asset('/consoletri.png')}}"

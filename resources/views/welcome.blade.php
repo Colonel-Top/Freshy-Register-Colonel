@@ -659,10 +659,11 @@
     }
 
     .fontthai {
-        /*font-family: Kanit-Medium;*/
-        font-family:Arial;
+        font-family: Kanit-Medium;
+        /*font-family:Arial;*/
         font-size: 20px !important;
         color: black !important;
+        width:100px;
     }
 </style>
 @section('content')

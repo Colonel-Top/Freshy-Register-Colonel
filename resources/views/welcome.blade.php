@@ -663,7 +663,7 @@
         /*font-family:Arial;*/
         font-size: 20px !important;
         color: black !important;
-        
+
     }
 </style>
 @section('content')
@@ -705,7 +705,7 @@
                 <br>
                 <div id="th" class="th ">
 
-                    <div class="user__header" style="    margin-left: -17%;">
+                    <div class="user__header" style="    margin-left: -57%;">
 
                         @if(Session::has('fullseat'))
                             <button class="btn fontthai" type="button" onclick="reg()"><img

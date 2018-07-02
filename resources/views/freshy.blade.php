@@ -194,7 +194,7 @@
     .btn {
 
         /*width: 30%;*/
-
+ 
         -webkit-appearance: none;
         outline: 0;
         border: 0;

@@ -336,6 +336,7 @@
 
                             </form>
                             <br>
+                            {{dd($request)}}
                             <form method="POST" action="{{route('redirectback',$request)}}">
                                 {{csrf_field()}}
                                 <input type="hidden" name="data" value="{{ serialize($request->all()) }}">

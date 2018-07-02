@@ -193,7 +193,7 @@
 
     .btn {
 
-        width: 30%;
+        /*width: 30%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -207,7 +207,7 @@
 
     .btn:hover {
 
-        width: 30%;
+        /*width: 30%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -470,12 +470,12 @@
                         <row>
 
                             <button class="btn" type="submit">
-                                <img src="{{secure_asset('/consoleo.png')}}" style="width:30px;">
+                                <img src="{{secure_asset('/consoleo.png')}}" style="width: 25px;">
                                 Update
                             </button>
 
                             <button class="btn" type="button" onclick="back()">
-                                <img src="{{secure_asset('/consolextra.png')}}" style="width:30px;">
+                                <img src="{{secure_asset('/consolextra.png')}}" style="width: 25px;">
                                 Logout
                             </button>
                         </row>

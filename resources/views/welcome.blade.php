@@ -87,7 +87,7 @@
             padding: 3%;
 
             height: 0px;
-            margin-left:-2%;
+            margin-left: -2%;
         }
     }
 
@@ -494,9 +494,9 @@
 
     .btn {
 
-        width: 30%;
+        /*width: 14vmin;*/
 
-        -webkit-appearance: none;
+        /*-webkit-appearance: none;*/
         outline: 0;
         border: 0;
         color: black;
@@ -508,9 +508,9 @@
 
     .btn:hover {
 
-        width: 30%;
+        /*width: 30%;*/
 
-        -webkit-appearance: none;
+        /*-webkit-appearance: none;*/
         outline: 0;
         /*border: 0;*/
         color: black;
@@ -524,8 +524,8 @@
 
     .newfriends {
         font-family: Kanit-Medium;
-        letter-spacing: 6px;
-        font-size: 18px;
+        /*letter-spacing: 6px;*/
+        font-size: 16px;
         color: #777777;
         text-align: center;
     }
@@ -665,6 +665,10 @@
         color: black !important;
 
     }
+    .imagebutton
+    {
+        width:27px;
+    }
 </style>
 @section('content')
 
@@ -682,13 +686,13 @@
                     <h3 class="space2px">
                         BECOME FRESHY
                     </h3>
-
+<br>
                     <div id="th2" class="th2">
-                        <h3 class="newfriends">ลงทะเบียนรับเพื่อนใหม่</h3>
+                        <h3 class="newfriends">ล ง ท ะ เ บี ย น รั บ เ พื่ อ น ใ ห ม่</h3>
                     </div>
 
                     <div id="en2" class="en2">
-                        <h3 class="newfriends">Register Freshy</h3>
+                        <h3 class="newfriends">Freshy Registration</h3>
                     </div>
                     <br>
                     <section name="switcher" style="text-align: center;">
@@ -701,147 +705,164 @@
                         </label>
                         <label class="space3px">&nbsp;&nbsp;EN</label>
                     </section>
-                    <section name="info">
-                        <br>
-                        <div id="th" class="th ">
-
-                            <div class="user__header" style="    margin-left: -17%;">
-
-                                @if(Session::has('fullseat'))
-                                    <button class="btn fontthai" type="button" onclick="reg()"><img
-                                                src="{{secure_asset('/consolex.png')}}"
-                                                style="width:30%;">
-                                        ลงทะเบียน<i class="fa fa-lock" style="font-size: 20px;"></i>
-                                    </button>
-                                @else
-                                    <button class="btn fontthai" type="button" onclick="reg()"><img
-                                                src="{{secure_asset('/consolex.png')}}"
-                                                style="width:30%;">
-                                        ลงทะเบียน
-                                    </button>
-                                @endif
-                                <br>
-                                <button class="btn fontthai" type="button" onclick="codesearch()"><img
-                                            src="{{secure_asset('/consoleo.png')}}"
-                                            style="width:30%;">
-                                    เข้าสู่ระบบ / สถานะ
-                                </button>
-                                <br>
-                                <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
-                                            src="{{secure_asset('/consoletri.png')}}"
-                                            style="width:30%;">
-                                    ค้นหา Code
-                                </button>
-                                <br>
-                                <button class="btn fontthai" type="button" onclick="login()"><img
-                                            src="{{secure_asset('/consolextra.png')}}"
-                                            style="width:30%;">
-                                    Staff Login
-                                </button>
-                                <br>
-                                <br>
-                                <button class="btn fontthai" type="button" onclick="about()"><img
-                                            src="{{secure_asset('/consolespecial.png')}}"
-                                            style="width:30%;">
-                                    เกี่ยวกับระบบ
-                                </button>
-                                <br>
-                                <br>
-                                <br>
-                                <div class="user__header">
-                                    <p style="font-family: Kanit-Medium;">ล่าสุด: {{$lastlog}}</p>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12" style="margin-top:3px;">
-                                        <img src="{{secure_asset('/TUSU-LOGOnew.png')}}" style="width:100%;">
-
-                                    </div>
-
-                                </div>
-                                <div class="row">
-
-                                    <div class="col-md-12" style="margin-top:15px;">
-                                        <img src="{{secure_asset('/LogoColMinimal.png')}}" style="width:100%;">
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div id="en" class="en ">
-
-                            <div class="user__header" style="    margin-left: -17%;">
-
-                                @if(Session::has('fullseat'))
-                                    <button class="btn fontthai" type="button" onclick="reg()"><img
-                                                src="{{secure_asset('/consolex.png')}}"
-                                                style="width:30%;">
-                                        Register<i class="fa fa-lock" style="font-size: 20px;"></i>
-                                    </button>
-                                @else
-                                    <button class="btn fontthai" type="button" onclick="reg()"><img
-                                                src="{{secure_asset('/consolex.png')}}"
-                                                style="width:30%;">
-                                        Register
-                                    </button>
-                                @endif
-                                <br>
-                                <button class="btn fontthai" type="button" onclick="codesearch()"><img
-                                            src="{{secure_asset('/consoleo.png')}}"
-                                            style="width:30%;">
-                                    Login / Status
-                                </button>
-                                <br>
-                                <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
-                                            src="{{secure_asset('/consoletri.png')}}"
-                                            style="width:30%;">
-                                    Search Code
-                                </button>
-                                <br>
-                                <button class="btn fontthai" type="button" onclick="login()"><img
-                                            src="{{secure_asset('/consolextra.png')}}"
-                                            style="width:30%;">
-                                    Staff Login
-                                </button>
-                                <br>
-                                <br>
-                                <button class="btn fontthai" type="button" onclick="about()"><img
-                                            src="{{secure_asset('/consolespecial.png')}}"
-                                            style="width:30%;">
-                                    About Application
-                                </button>
-                                <br>
-                                <br>
-                                <br>
-                                <div class="user__header">
-                                    <p style="font-family: Kanit-Medium;">Happening: {{$lastlog}}</p>
-                                </div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-12" style="margin-top:3px;">
-                                            <img src="{{secure_asset('/TUSU-LOGOnew.png')}}" style="width:100%;">
-
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-
-                                        <div class="col-md-12" style="margin-top:15px;">
-                                            <img src="{{secure_asset('/LogoColMinimal.png')}}" style="width:100%;">
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </section>
                 </header>
+                <br>
+                <header class="user__header" style="text-align: center;">
 
 
+                    <div id="th" class="th ">
+                        <div class ="row">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="user__header" style="text-align: center !important;" >
+
+                                    @if(Session::has('fullseat'))
+                                        <button class="btn fontthai" type="button" onclick="reg()"><img
+                                                    src="{{secure_asset('/consolex.png')}}"
+                                                    class="imagebutton">
+                                            ลงทะเบียน&nbsp<i class="fa fa-lock" style="font-size: 20px;"></i>
+                                        </button>
+                                    @else
+                                        <button class="btn fontthai" type="button" onclick="reg()"><img
+                                                    src="{{secure_asset('/consolex.png')}}"
+                                                    class="imagebutton">
+                                            ลงทะเบียน&nbsp;&nbsp;
+                                        </button>
+                                    @endif
+                                    <br>
+                                        <button class="btn fontthai" type="button" onclick="codesearch()"><img
+                                                    src="{{secure_asset('/consoleo.png')}}"
+                                                    class="imagebutton">
+                                            เข้าสู่ระบบ&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                    <br>
+                                    <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
+                                                src="{{secure_asset('/consoletri.png')}}"
+                                                class="imagebutton">
+                                        ค้นหา Code
+                                    </button>
+                                    <br>
+                                    <button class="btn fontthai" type="button" onclick="login()"><img
+                                                src="{{secure_asset('/consolextra.png')}}"
+                                                class="imagebutton">
+                                        Staff Login
+                                    </button>
+                                    <br>
+                                    <br>
+                                    <button class="btn fontthai" type="button" onclick="about()"><img
+                                                src="{{secure_asset('/consolespecial.png')}}"
+                                                class="imagebutton">
+                                        เกี่ยวกับระบบ
+                                    </button>
+                                    <br>
+                                    <br>
+                                    <br>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                            </div>
+                        </div>
+                        <div class="user__header">
+                            <p style="font-family: Kanit-Medium;">กิจกรรมล่าสุด: {{$lastlog}}</p>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12" style="margin-top:3px;">
+                                    <img src="{{secure_asset('/TUSU-LOGOnew.png')}}" style="width:100%;">
+
+                                </div>
+
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-12" style="margin-top:15px;">
+                                    <img src="{{secure_asset('/LogoColMinimal.png')}}" style="width:100%;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="en" class="en">
+                        <div class ="row">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="user__header" style="text-align: center !important;" >
+
+                                    @if(Session::has('fullseat'))
+                                        <button class="btn fontthai" type="button" onclick="reg()"><img
+                                                    src="{{secure_asset('/consolex.png')}}"
+                                                    class="imagebutton">
+                                            Register&nbsp;<i class="fa fa-lock" style="font-size: 20px;"></i>
+                                        </button>
+                                    @else
+                                        <button class="btn fontthai" type="button" onclick="reg()"><img
+                                                    src="{{secure_asset('/consolex.png')}}"
+                                                    class="imagebutton">
+                                            Register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </button>
+                                    @endif
+                                    <br>
+                                    <button class="btn fontthai" type="button" onclick="codesearch()"><img
+                                                src="{{secure_asset('/consoleo.png')}}"
+                                                class="imagebutton">
+                                        Freshy Login
+                                    </button>
+                                    <br>
+                                    <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
+                                                src="{{secure_asset('/consoletri.png')}}"
+                                                class="imagebutton">
+                                        Search Code
+                                    </button>
+                                    <br>
+                                    <button class="btn fontthai" type="button" onclick="login()"><img
+                                                src="{{secure_asset('/consolextra.png')}}"
+                                                class="imagebutton">
+                                        Staff Login&nbsp;&nbsp;
+                                    </button>
+                                    <br>
+                                    <br>
+                                    <button class="btn fontthai" type="button" onclick="about()"><img
+                                                src="{{secure_asset('/consolespecial.png')}}"
+                                                class="imagebutton">
+                                        About App&nbsp;&nbsp;
+                                    </button>
+                                    <br>
+                                    <br>
+                                    <br>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                            </div>
+                        </div>
+                        <div class="user__header">
+                            <p style="font-family: Kanit-Medium;">Last Activity: {{$lastlog}}</p>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12" style="margin-top:3px;">
+                                    <img src="{{secure_asset('/TUSU-LOGOnew.png')}}" style="width:100%;">
+
+                                </div>
+
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-12" style="margin-top:15px;">
+                                    <img src="{{secure_asset('/LogoColMinimal.png')}}" style="width:100%;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </header>
 
             </div>
 
@@ -909,7 +930,7 @@
         }
         var codesearch = function () {
             $("#gone").fadeOut("slow", function () {
-                window.location.href = "{{route('searchindex')}}";
+                window.location.href = "{{route('freshyshowlogin')}}";
             });
         }
         var codelostsearch = function () {

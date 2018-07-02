@@ -496,11 +496,11 @@
                     <div style="margin-top:15px;">
                         <row>
                             <button class="btn" type="submit"><img src="{{secure_asset('/consoleo.png')}}"
-                                                                   style="width:30px;"> Register
+                                                                   class="imagebutton"> Register
                             </button>
 
                             <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consoletri.png')}}"
-                                                                                    style="width:30px;">
+                                                                                    class="imagebutton">
                                 Back
                             </button>
                         </row>

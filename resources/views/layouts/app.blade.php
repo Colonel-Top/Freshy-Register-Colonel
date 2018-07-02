@@ -72,6 +72,10 @@
             width: 900%;
             background-size: 14% 20%;
         }
+        .imagebutton
+        {
+            width:27px;
+        }
     </style>
 </head>
 @if(Route::current()->getName() == 'freshy')

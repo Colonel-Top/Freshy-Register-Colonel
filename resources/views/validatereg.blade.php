@@ -350,7 +350,8 @@
                                                                                     style="width:30px;">
                                 Cancel
                             </button>
-                            <br><br>
+                            <br><br><br><br>
+                            .
                         </div>
                     </div>
                 </div>

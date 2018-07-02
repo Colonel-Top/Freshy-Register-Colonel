@@ -661,9 +661,9 @@
     .fontthai {
         font-family: Kanit-Medium;
         /*font-family:Arial;*/
-        font-size: 100px !important;
+        font-size: 20px !important;
         color: black !important;
-        /*width:100px;*/
+        
     }
 </style>
 @section('content')

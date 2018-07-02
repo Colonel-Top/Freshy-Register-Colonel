@@ -293,6 +293,7 @@
         .user {
             width: auto;
             max-width: 1465px;
+            width:1465px;
             /*margin: 10vh auto;*/
 
             padding: 3%;

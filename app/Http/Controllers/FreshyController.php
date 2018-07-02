@@ -78,6 +78,7 @@ class FreshyController extends Controller
 
     public function checkfirst(Request $request)
     {
+        dd($request->all());
         return view('validatereg', ['request' => $request]);
     }
 

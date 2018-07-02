@@ -186,7 +186,7 @@ class FreshyController extends Controller
         else
             $result['seat'] = "SeatID: -";
 
-        return redirect()->to(route('searchindex'))->withInput($searchdata)->with(Session::flash('result', 'Data Found!'))->with(['data' => $result]);
+        return redirect()->to(route('searchlostindex'))->withInput($searchdata)->with(Session::flash('result', 'Data Found!'))->with(['data' => $result]);
     }
 
     public function updatefreshy(Request $request)

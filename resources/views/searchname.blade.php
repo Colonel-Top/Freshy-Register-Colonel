@@ -278,6 +278,60 @@
                 </h2>
             </header>
             <div class="user__header">
+                <br> &nbsp;<h2 class="newfriends">SEARCH MY STATUS</h2>
+                <form action="{{ route('search-query') }}" class="form" style="text-align: center;" method="POST"
+                      enctype="multipart/form-data">
+                    {{csrf_field()}}
+                    <div class="form__group">
+                        {{--<label for="name">ชื่อ</label>--}}
+                        <input type="text" name="search" placeholder="Freshy ID / Code" class="form__input" required
+                               value="{{old('search')}}" style="text-align: center;"/>
+                    </div>
+
+                    <button class="btn" type="submit"><img src="{{secure_asset('/consoleo.png')}}"
+                                                           style="width:30%;">
+                        Search
+                    </button>
+
+                    <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consoletri.png')}}"
+                                                                            style="width:30%;">
+                        Home
+                    </button>
+                    {{--<button class="btn" type="button" onclick="freshylogin()"><img src="{{secure_asset('/consoletri.png')}}"--}}
+                                                                                   {{--style="width:30%;">--}}
+                        {{--Login--}}
+                    {{--</button>--}}
+                    <br>
+                    <br>
+                    <br>
+                    &nbsp;<h2 class="newfriends">OR</h2>
+
+                    <br>
+                    {{--<br>--}}
+                    {{--<br>--}}
+                    {{--@if (Session::has('error'))--}}
+                        {{--<h2 class="alert-danger breadcrumb"--}}
+                            {{--style="font-family: Kanit-Medium; font-size:16px; ">{{ Session::get('error') }}</h2>--}}
+                    {{--@endif--}}
+                    {{--@if (Session::has('result'))--}}
+                        {{--<h2 class="alert-success breadcrumb"--}}
+                            {{--style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('result') }}</h2>--}}
+                        {{--<div class="container">--}}
+                            {{--<div class="row">--}}
+                                {{--<div class="col-md-12" style="text-align: left !important;">--}}
+                                    {{--@foreach( session()->get('data') as $data)--}}
+
+                                        {{--<p>{{$data}}</p>--}}
+                                    {{--@endforeach--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--@endif--}}
+
+
+                </form>
+            </div>
+            <div class="user__header">
                 <br> &nbsp;<h2 class="newfriends">SEARCH MY CODE</h2>
                 <form action="{{ route('search-lost-query') }}" class="form" style="text-align: center;" method="POST"
                       enctype="multipart/form-data">
@@ -299,6 +353,7 @@
                         Home
                     </button>
                     <br>
+                    <br><br>
                     <br>
                     @if (Session::has('error'))
                         <h2 class="alert-danger breadcrumb"

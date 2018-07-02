@@ -338,7 +338,7 @@
 
         }
         var register = function () {
-            window.location.href = "{{route('searchindex')}}";
+            window.location.href = "{{route('index')}}";
 
         }
 

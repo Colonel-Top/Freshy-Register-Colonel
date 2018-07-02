@@ -78,14 +78,14 @@ class FreshyController extends Controller
 
     public function checkfirst(Request $request)
     {
-        dd($request->all());
+//        dd($request->all());
         return view('validatereg', ['request' => $request]);
     }
 
     public function redirectback(Request $request)
     {
 
-        dd(unserialize($request->data));
+//        dd(unserialize($request->data));
 //        return view('freshy');
         return redirect()->to(route('freshy'))->withInput(unserialize($request->data));
     }

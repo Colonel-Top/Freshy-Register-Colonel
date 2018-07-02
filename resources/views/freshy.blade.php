@@ -223,7 +223,7 @@
 
     .newfriends {
         font-family: Kanit-Medium;
-        letter-spacing: 6px;
+        /*letter-spacing: 6px;*/
         font-size: 18px;
         color: #777777;
         text-align: center;

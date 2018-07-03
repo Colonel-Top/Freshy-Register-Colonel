@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <meta name="Description" CONTENT="เว็บไซต์ลงทะเบียนเข้าร่วมกิจกรรมรับเพื่อนใหม่ มหาวิทยาลัยธรรมศาสตร์ TU84 2561 Official [TUSU]">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -39,22 +42,14 @@
             position: absolute;
             z-index:0;
             /* background-color: rgb(107, 0, 100); */
-            background-image: -webkit-linear-gradient(30deg, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 50%);
+            background-image: -webkit-linear-gradient(14deg, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 50%);
             min-height: 504px;
-            width: 99%;
+            width: 100%;
             min-height: 950px;
             top: 0;
+
         }
-        .onerow {
-            position: absolute;
-             z-index: -2;
-            /* background-color: rgb(107, 0, 100); */
-            background-image: -webkit-linear-gradient(30deg, rgba(255, 255, 255, 0.76) 50%, rgba(207, 217, 219, 0.82) 50%, rgba(255, 255, 255, 0) 50%);
-            min-height: 504px;
-            width: 118%;
-            min-height: 985px;
-            top: 0;
-        }
+
         .custombackground {
             background-repeat: no-repeat;
             position: fixed;
@@ -62,8 +57,8 @@
             right: 0;
             top: -37%;
             z-index: -2;
-            width: 12000px;
-            height: 8000px;
+            /*width: 12000px;*/
+            height: 1000%;
 
 
 
@@ -85,7 +80,7 @@
     <body>
 
     <div class = "custombackground"></div>
-    <div class = "onerow"></div>
+    {{--<div class = "onerow"></div>--}}
     <div class = "one"></div>
     {{--<div class = "one"></div>--}}
 @else

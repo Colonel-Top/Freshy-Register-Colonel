@@ -190,7 +190,7 @@
 
     .btn {
 
-        width: 30%;
+        /*width: 30%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -204,7 +204,7 @@
 
     .btn:hover {
 
-        width: 30%;
+        /*width: 30%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -291,7 +291,7 @@
                     </button>
                 @endif
                 @if (Session::has('seatfull'))
-                    <h2 class="alert-secondary breadcrumb"
+                    <h2 class="alert-warning breadcrumb"
                         style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('seatfull') }}</h2>
                 @endif
                 @if (Session::has('regdone'))
@@ -301,26 +301,72 @@
                     <h2 class="alert-success breadcrumb"
                         style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('regdone') }}</h2>
                     <br>
-                    <h2 class="alert-danger breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">กรุณา Capture
+                    <h2 class="alert-success breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">กรุณา Capture
                         หน้าจอ หรือจด Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน คุณสามารถตรวจสอบ / เปลี่ยนแปลงข้อมูลที่สมัครได้ในเมนู เข้าสู่ระบบสถานะที่เมนูหลัก</h2>
 <br>
-                    <h2 class="alert-danger breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">Please Take this Code for identify your identity @Event, You can also change/Check status in Main Menu -> Login / Status</h2>
+                    <h2 class="alert-success breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">Please Take this Code for identify your identity @Event, You can also change/Check status in Main Menu -> Login / Status</h2>
                     <button class="btn" type="button" onclick="printDiv('user');"><img
                                 src="{{secure_asset('/consoletri.png')}}"
-                                style="width:30%;">
-                        Print
+                                class="imagebutton">
+                        Print Code
                     </button>
                 @endif
 
                 <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consoleo.png')}}"
-                                                                        style="width:30%;">
+                                                                        class="imagebutton">
                     Home
                 </button>
             </div>
 
 
         </div>
+        <div class="container" id="print" name="print"
+             style="visibility: hidden; text-align:center; width:100%;font-family: GothamRounded-Light; position:absolute;">
+            {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
+            <div style="padding-top:100px;"></div>
+            <h1 class="space2px"
+                style="letter-spacing: 10px;font-size:55px;">STUDENT</h1>
 
+            <div style="margin-bottom:10px;"></div>
+            {{--&nbsp;<h2 class="space2px"> FRESHY</h2>--}}
+            &nbsp;<h2 class="space2px" style="font-size:20px; font-weight:bolder; ">
+
+                BECOME FRESHY
+            </h2>
+            <br>
+            <br>
+            &nbsp;<h2 class="space2px" style="font-weight:bolder; font-size: 40px; ">
+
+                YOUR CODE
+            </h2>
+            <br>
+            <br>
+
+            @if (Session::has('code'))
+
+                <h1 class="space2px alert-dark"
+                    style="font-size: 60px; font-weight: bolder;">{{ Session::get('code') }}</h1>
+                <br>
+                <br>
+                <h2 class="alert-warning" style="font-family: Kanit-Medium; font-size:30px; text-align: center;">กรุณาเก็บ
+                    Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน</h2>
+                <br>
+                <h2 class="alert-warning" style="font-family: Kanit-Medium; font-size:10px; text-align: center;">-----------------------------</h2>
+                <br>
+                <br>
+                <div class="container" style="text-align: center;">
+
+                    <div class = "col-md-12">
+                        <img src="{{secure_asset('/mapforprint.png')}}" style="width:auto;height:50%;"/>
+
+
+                    </div>
+
+
+                </div>
+            @endif
+
+        </div>
     </div>
 
     <script>
@@ -328,6 +374,7 @@
             var printContents = document.getElementById(divName).innerHTML;
             var originalContents = document.body.innerHTML;
             document.body.innerHTML = printContents;
+            window.focus();
             window.print();
             document.body.innerHTML = originalContents;
         }

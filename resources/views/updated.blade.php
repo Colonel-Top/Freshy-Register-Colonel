@@ -190,7 +190,7 @@
 
     .btn {
 
-        width: 30%;
+        /*width: 30%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -204,7 +204,7 @@
 
     .btn:hover {
 
-        width: 30%;
+        /*width: 30%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -259,6 +259,12 @@
 
 
 </style>
+<style>
+    @page {
+        size: auto;
+        margin: 0mm;
+    }
+</style>
 @section('content')
 
     <div class="container-fluid">
@@ -299,34 +305,85 @@
                     <h1 class="alert-dark formheader">{{ Session::get('code') }}</h1>
                     <br>
                     <h2 class="alert-success breadcrumb"
-                        style="font-family: Kanit-Medium; font-size:16px;">Code:{{ Session::get('code') }} Successfully Updated</h2>
+                        style="font-family: Kanit-Medium; font-size:16px;">Code:{{ Session::get('code') }} Successfully
+                        Updated</h2>
                     <br>
-                    <h2 class="alert-warning breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">การ Update ข้อมูลเสร็จสมบูรณ์ กรุณาอย่าลืม Capture
-                        หน้าจอ หรือจด Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน</h2>
-
-                    <button class="btn" type="button" onclick="printDiv('user');"><img
+                    <h2 class="alert-success breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">การ Update
+                        ข้อมูลเสร็จสมบูรณ์</h2>
+                    <h2 class="alert-warning breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">กรุณาอย่าลืม
+                        Capture / จด / Print Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน</h2>
+                    <button class="btn" type="button" onclick="printDiv('print');"><img
                                 src="{{secure_asset('/consoletri.png')}}"
-                                style="width:30%;">
-                        Print
+                                class="imagebutton">
+                        Print Code
                     </button>
                 @endif
 
                 <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consoleo.png')}}"
-                                                                        style="width:30%;">
+                                                                        class="imagebutton">
                     Home
                 </button>
             </div>
 
 
         </div>
+        <div class="container" id="print" name="print"
+             style="visibility: hidden; text-align:center; width:100%;font-family: GothamRounded-Light;position:absolute;">
+            {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
+            <div style="padding-top:100px;"></div>
+            <h1 class="space2px"
+                style="letter-spacing: 10px;font-size:55px;">STUDENT</h1>
 
+            <div style="margin-bottom:10px;"></div>
+            {{--&nbsp;<h2 class="space2px"> FRESHY</h2>--}}
+            &nbsp;<h2 class="space2px" style="font-size:20px; font-weight:bolder; ">
+
+                BECOME FRESHY
+            </h2>
+            <br>
+            <br>
+            &nbsp;<h2 class="space2px" style="font-weight:bolder; font-size: 40px; ">
+
+                YOUR CODE
+            </h2>
+            <br>
+            <br>
+
+            @if (Session::has('code'))
+
+                <h1 class="space2px alert-dark"
+                    style="font-size: 60px; font-weight: bolder;">{{ Session::get('code') }}</h1>
+                <br>
+                <br>
+                <h2 class="alert-warning" style="font-family: Kanit-Medium; font-size:30px; text-align: center;">
+                    กรุณาเก็บ
+                    Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน</h2>
+                <br>
+                <h2 class="alert-warning" style="font-family: Kanit-Medium; font-size:10px; text-align: center;">
+                    -----------------------------</h2>
+                <br>
+                <br>
+                <div class="container" style="text-align: center;">
+
+                    <div class="col-md-12">
+                        <img src="{{secure_asset('/mapforprint.png')}}" style="width:auto;height:50%;"/>
+
+                    </div>
+
+                </div>
+            @endif
+
+        </div>
     </div>
 
     <script>
         function printDiv(divName) {
             var printContents = document.getElementById(divName).innerHTML;
             var originalContents = document.body.innerHTML;
+
+
             document.body.innerHTML = printContents;
+            window.focus();
             window.print();
             document.body.innerHTML = originalContents;
         }
@@ -341,12 +398,12 @@
 
         var back = function () {
 
-                window.location.href = "{{URL::to('/')}}";
+            window.location.href = "{{URL::to('/')}}";
 
         }
         var relog = function () {
 
-                window.location.href = "{{route('freshyshowlogin')}}";
+            window.location.href = "{{route('freshyshowlogin')}}";
 
         }
 

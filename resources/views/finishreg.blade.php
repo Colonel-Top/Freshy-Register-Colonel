@@ -307,10 +307,10 @@
                     <h2 class="alert-success breadcrumb"
                         style="font-family: Kanit-Medium; font-size:16px;">{{ Session::get('regdone') }}</h2>
                     <br>
-                    <h2 class="alert-success breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">กรุณา Capture
-                        หน้าจอ หรือจด Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน คุณสามารถตรวจสอบ / เปลี่ยนแปลงข้อมูลที่สมัครได้ในเมนู เข้าสู่ระบบสถานะที่เมนูหลัก</h2>
+                    <h2 class="alert-success breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">กรุณาอย่าลืม
+                        Capture / จด / Print Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน คุณสามารถตรวจสอบ / เปลี่ยนแปลงข้อมูลที่สมัครได้ในเมนู เข้าสู่ระบบสถานะที่เมนูหลัก</h2>
 <br>
-                    <h2 class="alert-success breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">Please Take this Code for identify your identity @Event, You can also change/Check status in Main Menu -> Login / Status</h2>
+                    <h2 class="alert-success breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">Please Capture / Print / Take this Code for check-in your identity @Event, You can also change/Check status in Main Menu -> Login / Status</h2>
                     <button class="btn" type="button" onclick="printDiv('print');"><img
                                 src="{{secure_asset('/consoletri.png')}}"
                                 class="imagebutton">

@@ -971,7 +971,7 @@
         $(document).ready(function () {
             setTimeout(fn, 1000);
             var now = new Date();
-            now.setTime(now.getTime() + 15 * 60 * 1000);
+            now.setTime(now.getTime() + 5 * 60 * 1000);
             document.cookie = "landingPage=visited; expires=" + now.toUTCString() + "; path=/";
 
             // setTimeout(fn,0);

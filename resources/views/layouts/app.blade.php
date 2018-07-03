@@ -42,7 +42,7 @@
             background-image: -webkit-linear-gradient(30deg, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 50%);
             min-height: 504px;
             width: 99%;
-            min-height: 916px;
+            min-height: 950px;
             top: 0;
         }
         .onerow {

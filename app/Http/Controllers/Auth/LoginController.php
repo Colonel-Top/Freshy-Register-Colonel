@@ -56,9 +56,9 @@ class LoginController extends Controller
             DB::table('activity_log')->insert(['activity'=>$log,'created_at'=> Carbon::now()]);
             return redirect()->intended($this->redirectPath());
         }
-        $log =$request->email . " just trying to loggin in";
-        print_r($login_type);
-        dd($log);
+        $log ="someone trying logging in with user: ".$request->email . "is it correct? ";
+        #print_r($login_type);
+        #dd($log);
         DB::table('activity_log')->insert(['activity'=>$log,'created_at'=> Carbon::now()]);
         return redirect()->back()
             ->withInput()

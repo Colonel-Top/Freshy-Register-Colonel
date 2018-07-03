@@ -328,7 +328,9 @@
                                 update your information any time.<br>
                                 We reserve the right to secure your information for your security and safety under the
                                 law of Thailand. We also encrypt your data which happen on this website. that's
-                                mean all information will be safe here. Any problem please Contact Staff Team
+                                mean all information will be safe here. Any problem please Contact Staff Team.
+                                <br>
+                                We reserve the right that let's first come first serve for our check-in @ event Make sure you come before the seat running out !
                                 <br>
                                 <br>
                                 *If you are a foreigner, please use English to fill in the form.<br>

@@ -259,6 +259,12 @@
 
 
 </style>
+<style>
+    @page {
+        size: auto;
+        margin: 0mm;
+    }
+</style>
 @section('content')
 
     <div class="container-fluid">

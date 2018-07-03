@@ -78,7 +78,7 @@ class UserController extends Controller
 
         $user = User::findOrFail($id);
 
-        $log = $user->name." just approved staff position by developer! whoo ahh!";
+        $log = $user->name." just approved staff position by developer";
         DB::table('activity_log')->insert(['activity'=>$log,'created_at'=> Carbon::now()]);
         $user->state='verified';
         $user->save();

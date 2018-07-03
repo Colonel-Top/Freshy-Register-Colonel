@@ -301,7 +301,7 @@
                     <br>
                     <div class="container">
                         <br>
-                        <img src="{{secure_asset('/TUSU-LOGO.png')}}" style="width:60%;">
+                        <img src="{{secure_asset('/TUSU-LOGO.png')}}" style="width:100%;">
                         <br>
                         Website Scope
                         <br><br>
@@ -321,12 +321,12 @@
                     <br>
                     <div class="container">
                         <br>
-                        <img src="{{secure_asset('/Col.png')}}" style="width:30%;">
+                        <img src="{{secure_asset('/Col.png')}}" style="width:50%;">
                         <br>
                         Developer Scope
                         <br><br>
                         Designer & Developer: Promsurin Phutthammawong<br>
-                        Web Application Version: 1.0 Pre-Release<br><br>
+                        Web Application Version: 3.0 Release<br><br>
                         Affiliation of: Colonel Technology
                         <br><br>
                         Platform: PHP + Laravel Framework<br>

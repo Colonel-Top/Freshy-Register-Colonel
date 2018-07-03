@@ -305,7 +305,7 @@
                         หน้าจอ หรือจด Code นี้ไว้เพื่อยืนยันตัวตนในการเข้างาน คุณสามารถตรวจสอบ / เปลี่ยนแปลงข้อมูลที่สมัครได้ในเมนู เข้าสู่ระบบสถานะที่เมนูหลัก</h2>
 <br>
                     <h2 class="alert-success breadcrumb" style="font-family: Kanit-Medium; font-size:18px;">Please Take this Code for identify your identity @Event, You can also change/Check status in Main Menu -> Login / Status</h2>
-                    <button class="btn" type="button" onclick="printDiv('user');"><img
+                    <button class="btn" type="button" onclick="printDiv('print');"><img
                                 src="{{secure_asset('/consoletri.png')}}"
                                 class="imagebutton">
                         Print Code
@@ -342,7 +342,7 @@
             <br>
             <br>
 
-            @if (Session::has('code'))
+            @if (Session::has('regdone'))
 
                 <h1 class="space2px alert-dark"
                     style="font-size: 60px; font-weight: bolder;">{{ Session::get('code') }}</h1>

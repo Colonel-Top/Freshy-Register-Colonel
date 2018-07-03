@@ -6,6 +6,306 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
+    }
+
+    @media only screen and (min-width: 1366px) and (max-width: 1920px) {
+        .one {
+
+            background-size: 120% 103% !important;
+            animation: move2 1.53s ease-in-out forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .onerow {
+
+            background-size: 114% 103% !important;
+            animation: move2 1.83s ease forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4.5vmin;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 518px;
+            /* margin: 10vh auto; */
+            padding: 3%;
+            height: 0px;
+            margin-left: -19%;
+        }
+    }
+
+    @media only screen and (max-width: 1366px) and (max-width: 1366px) {
+        .one {
+
+            background-size: 120% 103% !important;
+            animation: move2 1.53s ease-in-out forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .onerow {
+
+            background-size: 114% 103% !important;
+            animation: move2 1.83s ease forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4.5vmin;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 465px;
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
+            margin-left: -2%;
+        }
+    }
+
+    @media only screen and (min-width: 1024px)  and (max-width: 1024px) {
+        .one {
+
+            background-size: 120% 103% !important;
+            animation: move2 1.53s ease-in-out forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .onerow {
+
+            background-size: 114% 103% !important;
+            animation: move2 1.83s ease forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4.5vmin;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 465px;
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
+
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .one {
+
+            background-size: 163% 103% !important;
+            animation: move2 1.53s ease-in-out forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .onerow {
+
+            background-size: 163% 103% !important;
+            animation: move2 1.83s ease forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4.5vmin;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 465px;
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
+
+        }
+    }
+
+    @media only screen and (max-width: 720px) {
+        .one {
+
+            background-size: 196% 103% !important;
+            animation: move2 1.53s ease-in-out forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .onerow {
+
+            background-size: 196% 103% !important;
+            animation: move2 1.83s ease forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4vmax;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 465px;
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
+
+        }
+    }
+
+    @media only screen and (max-width: 585px) {
+        .one {
+
+            background-size: 227% 103% !important;
+            animation: move2 1.53s ease-in-out forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .onerow {
+
+            background-size: 227% 103% !important;
+            animation: move2 1.83s ease forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4vmax;
+            float: left;
+        }
+
+        .user {
+            width: 100%;
+            max-width: 465px;
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
+
+        }
+
+    }
+
+    @media only screen and (max-width: 368px) {
+        .one {
+
+            background-size: 317% 103% !important;
+            animation: move2 1.53s ease-in-out forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .onerow {
+
+            background-size: 317% 103% !important;
+            animation: move2 1.83s ease forwards;
+            /*transform: translate3d(0, 0, 0);*/
+            /*background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+            height: 100vh;
+
+        }
+
+        .imgresizer {
+            width: auto;
+            height: auto;
+            display: block;
+            /*max-width: 25%;*/
+            max-width: 4vmax;
+            float: left;
+        }
+
+        .user {
+            width: auto;
+            /*max-width: 465px;*/
+            /*margin: 10vh auto;*/
+
+            padding: 3%;
+
+            height: 0px;
+
+        }
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     body {
@@ -18,7 +318,7 @@
 
     }
 
-    .user {
+    .user.close {
         width: 100%;
         max-width: 465px;
         /*margin: 10vh auto;*/
@@ -26,14 +326,18 @@
         padding: 3%;
 
         height: 0px;
-
+        -webkit-transition: height 2.75s ease-in;
+        -moz-transition: height 2.75s ease-in;
+        -ms-transition: height 2.75s ease-in;
+        -o-transition: height 2.75s ease-in;
+        transition: height 2.75s ease-in;
     }
 
     .user.open {
         width: 100%;
         max-width: 465px;
         /*margin: 10vh auto;*/
-        background: whitesmoke;
+        /*background: whitesmoke;*/
         padding: 3%;
 
         height: 100px;
@@ -190,38 +494,38 @@
 
     .btn {
 
-        width: 30%;
+        /*width: 14vmin;*/
 
-        -webkit-appearance: none;
+        /*-webkit-appearance: none;*/
         outline: 0;
         border: 0;
         color: black;
         background: none;
-        opacity: 0.7;
+        opacity: 1;
         transition: 0.3s;
 
     }
 
     .btn:hover {
 
-        width: 30%;
+        /*width: 30%;*/
 
-        -webkit-appearance: none;
+        /*-webkit-appearance: none;*/
         outline: 0;
         /*border: 0;*/
         color: black;
         background: none;
         opacity: 0.7;
         transition: 0.3s;
-        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-        border: 2px solid rgba(81, 203, 238, 1);
+        box-shadow: 0 0 0px rgba(237, 233, 238, 0);
+        border: 0px solid rgba(229, 235, 238, 0);
 
     }
 
     .newfriends {
         font-family: Kanit-Medium;
-        letter-spacing: 6px;
-        font-size: 18px;
+        /*letter-spacing: 6px;*/
+        font-size: 22px;
         color: #777777;
         text-align: center;
     }
@@ -235,27 +539,11 @@
         opacity: 0;
     }
 
-    .newfriends {
-        font-family: Kanit-Medium;
-        letter-spacing: 6px;
-        /*font-size: 2vmin;*/
-        color: #777777;
-        /*text-align: center;*/
+    /*input, label {*/
+    /*display: inline-block;*/
 
-    }
-
-    .cursor {
-        display: block;
-        position: absolute;
-        height: 105%;
-        top: 7px;
-        right: -5px;
-        width: 2px;
-        /* Change colour of Cursor Here */
-        background-color: black;
-        z-index: 1;
-        animation: flash 0.5s none infinite alternate;
-    }
+    /*margin: 10px 0;*/
+    /*}*/
 
     .cursor {
         display: block;
@@ -361,17 +649,103 @@
         display: block;
     }
 
-    .fontthai {
-        font-family: GothamRounded-Light;
-        font-size: 18px;
+    .textleft {
+        text-align: left;
     }
+
+    .rows {
+        vertical-align: center;
+
+    }
+
+    .fontthai {
+        font-family: Kanit-Medium;
+        /*font-family:Arial;*/
+        font-size: 20px !important;
+        color: black !important;
+
+    }
+
+    .imageclassspon {
+        width: 100%;
+        opacity: 0;
+    }
+
+    .imageclassspon.open {
+        width: 100%;
+        -webkit-animation: fadein 2.22s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2.22s; /* Firefox < 16 */
+        -ms-animation: fadein 2.22s; /* Internet Explorer */
+        -o-animation: fadein 2.22s; /* Opera < 12.1 */
+        animation: fadein 2.22s;
+        opacity: 1;
+    }
+
+    .imageclassspon:hover {
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    .imagebutton {
+        width: 27px;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Firefox < 16 */
+    @-moz-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Safari, Chrome and Opera > 12.1 */
+    @-webkit-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Internet Explorer */
+    @-ms-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Opera < 12.1 */
+    @-o-keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
 </style>
 @section('content')
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="gone">
+        <div id="particles-js" style="position:absolute; width:99%; height:99%;"></div>
+        <div class="container">
 
-
-        <div class="user" id="user">
             <header class="user__header" style="text-align: center;">
                 {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
 
@@ -382,72 +756,77 @@
                 <h3 class="space2px">
                     BECOME FRESHY
                 </h3>
-
-                <div id="th2" class="th2">
-                    <h3 class="newfriends">ลงทะเบียนรับเพื่อนใหม่</h3>
-                </div>
-
-                <div id="en2" class="en2">
-                    <h3 class="newfriends">Register Freshy</h3>
+                <br>
+                <div class="row user__header" style="text-align: center;">
+                    <div class="col-md-12">
+                        <button class="btn fontthai" style="text-align: center;" type="button" onclick="homepage()"><img
+                                    src="{{secure_asset('/consolespecial.png')}}"
+                                    class="imagebutton">
+                            หน้าหลัก / Homepage
+                        </button>
+                    </div>
                 </div>
                 <br>
-                <section name="switcher" style="text-align: center;">
-                    <label class="space3px">TH&nbsp;&nbsp;</label>
-                    <label id="switch" class="switch">
+                <div id="th2" class="th2">
+                    <h3 class="alert-success newfriends" style="padding-top:20px; padding-bottom:20px;">
+                        ขอขอบคุณผู้สนับสนุนอย่างเป็นทางการ / Thank you for our sponsors</h3>
+                </div>
 
-                        <input type="checkbox">
-                        <span class="slider" onclick="toggleDiv()"></span>
 
-                    </label>
-                    <label class="space3px">&nbsp;&nbsp;EN</label>
-                </section>
             </header>
             <br>
-
-            <div class="user__header" style="    margin-left: -40px;">
-
-                @if(Session::has('fullseat'))
-                    <button class="btn fontthai" type="button" onclick="reg()"><img src="{{secure_asset('/consolex.png')}}"
-                                                                                    style="width:30%;">
-                        ลงทะเบียน.
-                    </button>
-                @else
-                    <button class="btn fontthai" type="button" onclick="reg()"><img src="{{secure_asset('/consolex.png')}}"
-                                                                                    style="width:30%;">
-                        ลงทะเบียน. <i class="fa fa-lock" style="font-size: 1.6em;"></i>
-                    </button>
-                @endif
-                <br>
-                <button class="btn fontthai" type="button" onclick="codesearch()"><img src="{{secure_asset('/consoleo.png')}}"
-                                                                                       style="width:30%;">
-                    ค้นหาสถานะ
-                </button>
-                <br>
-                <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
-                            src="{{secure_asset('/consoletri.png')}}"
-                            style="width:30%;">
-                    ค้นหา Code
-                </button>
-                <br>
-                <button class="btn fontthai" type="button" onclick="login()"><img src="{{secure_asset('/consolextra.png')}}"
-                                                                                  style="width:30%;">
-                    Staff Login
-                </button>
-                <br>
-                <button class="btn fontthai" type="button" onclick="about()"><img src="{{secure_asset('/consolextra.png')}}"
-                                                                                  style="width:30%;">
-                    About Application
-                </button>
-                <br>
+            <div class="row user__header">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <a href="https://th.canon/"> <img src="{{secure_asset('/sponsor/canon.png')}}" class="imageclassspon"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="http://www.genie-records.com/home/"> <img src="{{secure_asset('/sponsor/genie.png')}}"
+                                                                       class="imageclassspon"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.krungsri.com/bank/th/home.html"> <img src="{{secure_asset('/sponsor/krungsri.png')}}"
+                                                                               class="imageclassspon"></a>
+                </div>
+                <div class="col-md-1"></div>
             </div>
-
-            <div class="user__header" >
-                <p style="font-family: Kanit-Medium;">last Activity: {{$lastlog}}</p>
+            <br>
+            <div class="row user__header">
+                <div class="col-md-3">
+                    <a href="https://www.biorethailand.com/"> <img src="{{secure_asset('/sponsor/biore.png')}}"
+                                                                   class="imageclassspon"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="http://paolohospital.com/rangsit/"> <img src="{{secure_asset('/sponsor/paolo.png')}}"
+                                                                      class="imageclassspon"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.phyathai.com/branch/PYT3/"> <img src="{{secure_asset('/sponsor/payathai3.png')}}"
+                                                                          class="imageclassspon"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://th-th.facebook.com/SnackJackClub/"> <img src="{{secure_asset('/sponsor/snackjack.png')}}"
+                                                                              class="imageclassspon"></a>
+                </div>
             </div>
-
+            <br>
+            <div class="row user__header" style="text-align: center;">
+                <div class="col-md-12">
+                    <button class="btn fontthai" style="text-align: center;" type="button" onclick="homepage()"><img
+                                src="{{secure_asset('/consolespecial.png')}}"
+                                class="imagebutton">
+                        หน้าหลัก / Homepage
+                    </button>
+                </div>
+            </div>
         </div>
 
+
     </div>
+
+    </div>
+
+
 
     <script>
         function printDiv(divName) {
@@ -458,28 +837,52 @@
             document.body.innerHTML = originalContents;
         }
     </script>
+    <script src= {{secure_asset('js/particles.js')}}></script>
+    <script type="text/javascript">
 
+
+        particlesJS.load('particles-js', '{{secure_asset('js/particles.json')}}',
+            function () {
+                console.log('particles.json loaded...')
+            })
+
+    </script>
     <script type="text/javascript">
         var state = 1;
         var fn = function () {
             //    alert("Hello");
-            $(".user").toggleClass('open');
+            $(".imageclassspon").toggleClass('open');
 
         }
         var about = function () {
-            window.location.href = "{{route('about')}}";
+            $("#gone").fadeOut("slow", function () {
+                window.location.href = "{{route('about')}}";
+            });
 
         }
-        var back = function () {
+        var homepage = function () {
             window.location.href = "{{URL::to('/')}}";
 
         }
         var reg = function () {
-            window.location.href = "{{route('freshy')}}";
+
+
+            $("#gone").fadeOut("slow", function () {
+                // Animation complete.
+                window.location.href = "{{route('agreement')}}"
+            });
+
+            {{--setTimeout(function () {--}}
+            {{--;--}}
+
+            {{--}, 1500);--}}
+
 
         }
         var login = function () {
-            window.location.href = "{{route('login')}}";
+            $("#gone").fadeOut("slow", function () {
+                window.location.href = "{{route('login')}}";
+            });
 
         }
         var relog = function () {
@@ -487,22 +890,27 @@
 
         }
         var codesearch = function () {
-            window.location.href = "{{route('searchindex')}}";
-
+            $("#gone").fadeOut("slow", function () {
+                window.location.href = "{{route('freshyshowlogin')}}";
+            });
         }
         var codelostsearch = function () {
-            window.location.href = "{{route('searchlostindex')}}";
-
+            $("#gone").fadeOut("slow", function () {
+                window.location.href = "{{route('searchlostindex')}}";
+            });
         }
         var togglelang = function () {
             if (state == "1") {
-                $(".en").toggleClass('open');
+
                 $(".th").toggleClass('close');
+                $(".en").toggleClass('open');
                 state = 2;
             }
             else {
-                $(".th").toggleClass('open');
+                state = 1;
                 $(".en").toggleClass('close');
+                $(".th").toggleClass('open');
+
             }
         }
 
@@ -559,6 +967,19 @@
             }
 
         }
+
+        $(document).ready(function () {
+            setTimeout(fn, 1000);
+            var now = new Date();
+            now.setTime(now.getTime() + 15 * 60 * 1000);
+            document.cookie = "landingPage=visited; expires=" + now.toUTCString() + "; path=/";
+
+            // setTimeout(fn,0);
+            // setTimeout(fn1,0);
+            // setTimeout(fn2,0);
+            // setTimeout(fn3,0);
+        });
+
     </script>
 
 @endsection

@@ -83,6 +83,11 @@
     {{--<div class = "onerow"></div>--}}
     <div class = "one"></div>
     {{--<div class = "one"></div>--}}
+
+    @elseif(Route::current()->getName() == 'index2')
+        <body style="background-color: #dfdfdf;">
+
+
 @else
     <body class ="six">
 @endif

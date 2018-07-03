@@ -44,5 +44,5 @@ Route::post('/validate', 'FreshyController@checkfirst')->name('freshy-validate')
 Route::post('/redirectback', 'FreshyController@redirectback')->name('redirectback');
 Route::get('/result', 'FreshyController@done')->name('freshy-done');
 Route::get('/', 'FreshyController@frontindex')->name('index');
-Route::get('/s', 'FreshyController@frontindex2')->name('index2');
+Route::get('/landing', 'FreshyController@frontindex2')->name('index2');
 Auth::routes();

@@ -289,6 +289,11 @@
 
                     BECOME FRESHY
                 </h2>
+                <br>
+                <button class="btn" type="button" onclick="sponsors()"><img src="{{secure_asset('/consoletri.png')}}"
+                                                                        style="width:30px;">
+                    Sponsors
+                </button>
             </header>
             <br><br>
 
@@ -398,8 +403,8 @@
             window.location.href = "{{URL::to('/')}}";
 
         }
-        var relog = function () {
-            window.location.href = "{{URL::to('/colonel')}}";
+        var sponsors = function () {
+            window.location.href = "{{URL::to('/landing')}}";
 
         }
 

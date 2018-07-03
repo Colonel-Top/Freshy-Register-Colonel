@@ -56,7 +56,8 @@ class LoginController extends Controller
             DB::table('activity_log')->insert(['activity'=>$log,'created_at'=> Carbon::now()]);
             return redirect()->intended($this->redirectPath());
         }
-
+        $log =$login_type . " just trying to in";
+        DB::table('activity_log')->insert(['activity'=>$log,'created_at'=> Carbon::now()]);
         return redirect()->back()
             ->withInput()
             ->with(Session::flash('error', 'Your Credential Doesn\'t match our record, Your activity has logged'));

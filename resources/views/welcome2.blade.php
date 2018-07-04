@@ -743,7 +743,7 @@
 @section('content')
 
     <div class="container-fluid" id="gone">
-        <div id="particles-js" style="position:absolute; width:99%; height:99%;"></div>
+        <div id="particles-js" style="position:absolute; width:98%; height:98%;"></div>
         <div class="container">
 
             <header class="user__header" style="text-align: center;">

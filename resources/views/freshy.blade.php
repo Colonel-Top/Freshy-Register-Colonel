@@ -288,7 +288,8 @@
                 <br>
                 <h2 class="alert-danger breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">*Required
                     (ต้องกรอก)</h2>
-
+                <h2 class="alert-danger breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">
+                    *ขอร้อง..ได้โปรดกรุณากรอกข้อมูลด้วยภาษาไทย</h2>
                 <h2 class="alert-danger breadcrumb" style="font-family: Kanit-Medium; font-size:16px;">
                 *If you are a foreign person, please use English to fill in the form.</h2>
                 <br>

@@ -203,7 +203,7 @@
 
     .btn {
 
-        width: 35%;
+        /*width: 35%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -217,7 +217,7 @@
 
     .btn:hover {
 
-        width: 35%;
+        /*width: 35%;*/
 
         -webkit-appearance: none;
         outline: 0;
@@ -293,10 +293,7 @@
 
             </header>
             <br><br>
-            <button class="btn" type="button" onclick="sponsors()"><img src="{{secure_asset('/consoletri.png')}}"
-                                                                        style="width:30px;">
-                Sponsors
-            </button>
+
 
         </div>
         <div class="container-fluid row" style="text-align: center;">
@@ -369,8 +366,12 @@
         </div>
         <div class="user__header" style="font-family: Kanit-Medium;">
             <button class="btn" type="button" onclick="back()"><img src="{{secure_asset('/consolex.png')}}"
-                                                                    style="width:30px;">
+                                                                    class="imagebutton">
                 Back
+            </button>
+            <button class="btn" type="button" onclick="sponsors()"><img src="{{secure_asset('/consoletri.png')}}"
+                                                                       class="imagebutton">
+                Sponsors
             </button>
         </div>
         <br>

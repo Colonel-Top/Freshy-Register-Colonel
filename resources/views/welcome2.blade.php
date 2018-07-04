@@ -777,13 +777,14 @@
             <br>
             <div class="row user__header">
                 <div class="col-md-1"></div>
-                <div class="col-md-3">
-                    <a href="https://th.canon/"> <img src="{{secure_asset('/sponsor/canon.png')}}" class="imageclassspon"></a>
-                </div>
                 <div class="col-md-4">
                     <a href="http://www.genie-records.com/home/"> <img src="{{secure_asset('/sponsor/genie.png')}}"
                                                                        class="imageclassspon"></a>
                 </div>
+                <div class="col-md-3">
+                    <a href="https://th.canon/"> <img src="{{secure_asset('/sponsor/canon.png')}}" class="imageclassspon"></a>
+                </div>
+
                 <div class="col-md-3">
                     <a href="https://www.krungsri.com/bank/th/home.html"> <img src="{{secure_asset('/sponsor/krungsri.png')}}"
                                                                                class="imageclassspon"></a>

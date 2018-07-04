@@ -673,11 +673,11 @@
 
     .imageclassspon.open {
         width: 100%;
-        -webkit-animation: fadein 2.22s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 2.22s; /* Firefox < 16 */
-        -ms-animation: fadein 2.22s; /* Internet Explorer */
-        -o-animation: fadein 2.22s; /* Opera < 12.1 */
-        animation: fadein 2.22s;
+        -webkit-animation: fadein 2.52s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2.52s; /* Firefox < 16 */
+        -ms-animation: fadein 2.52s; /* Internet Explorer */
+        -o-animation: fadein 2.52s; /* Opera < 12.1 */
+        animation: fadein 2.52s;
         opacity: 1;
     }
 

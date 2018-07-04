@@ -762,7 +762,7 @@
                         <button class="btn fontthai" style="text-align: center;" type="button" onclick="homepage()"><img
                                     src="{{secure_asset('/consolespecial.png')}}"
                                     class="imagebutton">
-                            เข้าสู่เว็บไซต์ / Enter Website
+                            เข้าสู่เว็บไซต์ / Home
                         </button>
                     </div>
                 </div>
@@ -816,7 +816,7 @@
                     <button class="btn fontthai" style="text-align: center;" type="button" onclick="homepage()"><img
                                 src="{{secure_asset('/consolespecial.png')}}"
                                 class="imagebutton">
-                        เข้าสู่เว็บไซต์ / Enter Website
+                        เข้าสู่เว็บไซต์ / Home
                     </button>
                 </div>
             </div>

@@ -404,7 +404,7 @@
 
         }
         var sponsors = function () {
-            window.location.href = "{{URL::to('/landing')}}";
+            window.location.href = "{{route('index2'}}";
 
         }
 

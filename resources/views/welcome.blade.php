@@ -665,9 +665,9 @@
         color: black !important;
 
     }
-    .imagebutton
-    {
-        width:27px;
+
+    .imagebutton {
+        width: 27px;
     }
 </style>
 @section('content')
@@ -679,14 +679,21 @@
                 <header class="user__header" style="text-align: center;">
                     {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
 
-                    <h1 class="user__title formheader"
-                        style="letter-spacing: 10px;font-size:9vmin;">STUDENT</h1>
-                    <br>
+                    {{--<h1 class="user__title formheader"--}}
+                    {{--style="letter-spacing: 10px;font-size:9vmin;">STUDENT</h1>--}}
+                    {{--<br>--}}
 
-                    <h3 class="space2px">
-                        BECOME FRESHY
-                    </h3>
-<br>
+                    {{--<h3 class="space2px">--}}
+                    {{--BECOME FRESHY--}}
+                    {{--</h3>--}}
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <img src="{{secure_asset('/smallping.png')}}"style="width:100%">
+                        </div>
+
+                    </div>
+                    <br>
                     <div id="th2" class="th2">
                         <h3 class="newfriends">ล ง ท ะ เ บี ย น รั บ เ พื่ อ น ใ ห ม่</h3>
                     </div>
@@ -711,11 +718,11 @@
 
 
                     <div id="th" class="th ">
-                        <div class ="row">
+                        <div class="row">
                             <div class="col-md-4">
                             </div>
                             <div class="col-md-4">
-                                <div class="user__header" style="text-align: center !important;" >
+                                <div class="user__header" style="text-align: center !important;">
 
                                     @if(Session::has('fullseat'))
                                         <button class="btn fontthai" type="button" onclick="reg()"><img
@@ -731,11 +738,11 @@
                                         </button>
                                     @endif
                                     <br>
-                                        <button class="btn fontthai" type="button" onclick="codesearch()"><img
-                                                    src="{{secure_asset('/consoleo.png')}}"
-                                                    class="imagebutton">
-                                            เข้าสู่ระบบ&nbsp;&nbsp;&nbsp;
-                                        </button>
+                                    <button class="btn fontthai" type="button" onclick="codesearch()"><img
+                                                src="{{secure_asset('/consoleo.png')}}"
+                                                class="imagebutton">
+                                        เข้าสู่ระบบ&nbsp;&nbsp;&nbsp;
+                                    </button>
                                     <br>
                                     <button class="btn fontthai" type="button" onclick="codelostsearch()"><img
                                                 src="{{secure_asset('/consoletri.png')}}"
@@ -787,11 +794,11 @@
 
                     </div>
                     <div id="en" class="en">
-                        <div class ="row">
+                        <div class="row">
                             <div class="col-md-4">
                             </div>
                             <div class="col-md-4">
-                                <div class="user__header" style="text-align: center !important;" >
+                                <div class="user__header" style="text-align: center !important;">
 
                                     @if(Session::has('fullseat'))
                                         <button class="btn fontthai" type="button" onclick="reg()"><img

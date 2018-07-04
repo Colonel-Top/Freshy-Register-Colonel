@@ -749,14 +749,22 @@
             <header class="user__header" style="text-align: center;">
                 {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
 
-                <h1 class="user__title formheader"
-                    style="letter-spacing: 10px;font-size:9vmin;">STUDENT</h1>
-                <br>
+                {{--<h1 class="user__title formheader"--}}
+                {{--style="letter-spacing: 10px;font-size:9vmin;">STUDENT</h1>--}}
+                {{--<br>--}}
 
-                <h3 class="space2px">
-                    BECOME FRESHY
-                </h3>
-                <br>
+                {{--<h3 class="space2px">--}}
+                {{--BECOME FRESHY--}}
+                {{--</h3>--}}
+                {{--<br>--}}
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <img src="{{secure_asset('/smallping.png')}}" style="width:100%;">
+                    </div>
+
+                </div>
+
                 <div class="row user__header" style="text-align: center;">
                     <div class="col-md-12">
                         <button class="btn fontthai" style="text-align: center;" type="button" onclick="homepage()"><img

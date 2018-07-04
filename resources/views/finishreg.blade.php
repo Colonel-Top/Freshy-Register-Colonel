@@ -273,15 +273,22 @@
         <div class="user" id="user">
             <header class="user__header ">
                 {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
-                <h1 class="user__title formheader"
-                    style="letter-spacing: 10px;font-size:35px;">STUDENT</h1>
+                {{--<h1 class="user__title formheader"--}}
+                    {{--style="letter-spacing: 10px;font-size:35px;">STUDENT</h1>--}}
 
-                <div style="margin-bottom:10px;"></div>
+                {{--<div style="margin-bottom:10px;"></div>--}}
                 {{--&nbsp;<h2 class="space2px"> FRESHY</h2>--}}
-                &nbsp;<h2 class="space2px" style="font-weight:bolder; ">
+                {{--&nbsp;<h2 class="space2px" style="font-weight:bolder; ">--}}
 
-                    BECOME FRESHY
-                </h2>
+                    {{--BECOME FRESHY--}}
+                {{--</h2>--}}
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <img src="{{secure_asset('/smallping.png')}}"style="width:100%;">
+                    </div>
+
+                </div>
             </header>
             <div class="user__header">
                 <br> &nbsp;<h2 class="newfriends">@if (Session::has('regdone'))รหัส@endifลงทะเบียนรับเพื่อนใหม่</h2>
@@ -330,15 +337,22 @@
              style="visibility: hidden; text-align:center; width:100%;font-family: GothamRounded-Light; position:absolute;">
             {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
             <div style="padding-top:100px;"></div>
-            <h1 class="space2px"
-                style="letter-spacing: 10px;font-size:55px;">STUDENT</h1>
+            {{--<h1 class="space2px"--}}
+                {{--style="letter-spacing: 10px;font-size:55px;">STUDENT</h1>--}}
 
-            <div style="margin-bottom:10px;"></div>
+            {{--<div style="margin-bottom:10px;"></div>--}}
             {{--&nbsp;<h2 class="space2px"> FRESHY</h2>--}}
-            &nbsp;<h2 class="space2px" style="font-size:20px; font-weight:bolder; ">
+            {{--&nbsp;<h2 class="space2px" style="font-size:20px; font-weight:bolder; ">--}}
 
-                BECOME FRESHY
-            </h2>
+                {{--BECOME FRESHY--}}
+            {{--</h2>--}}
+            <div class="row">
+
+                <div class="col-md-12" style="text-align: center;">
+                    <img src="{{secure_asset('/smallping.png')}}"style="width:30%;">
+                </div>
+
+            </div>
             <br>
             <br>
             &nbsp;<h2 class="space2px" style="font-weight:bolder; font-size: 40px; ">

@@ -269,19 +269,13 @@
         <div class="user">
             <header class="user__header ">
                 {{--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>--}}
-                <div class="type-js">
+                <div class="row">
 
-
-                    <h1 class="user__title formheader text-js"
-                        style="letter-spacing: 10px;font-size:35px;">STUDENT</h1>
+                    <div class="col-md-12">
+                        <img src="{{secure_asset('/smallping.png')}}"style="width:100%;">
+                    </div>
 
                 </div>
-                <div style="margin-bottom:10px;"></div>
-                {{--&nbsp;<h2 class="space2px"> FRESHY</h2>--}}
-                &nbsp;<h2 class="space2px" style="font-weight:bolder; ">
-
-                    BECOME FRESHY
-                </h2>
             </header>
             <div class="user__header">
                 <br> &nbsp;<h2 class="newfriends">ข้อมูลลงทะเบียนรับเพื่อนใหม่</h2>

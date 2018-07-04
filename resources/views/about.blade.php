@@ -404,7 +404,7 @@
 
         }
         var sponsors = function () {
-            window.location.href = "{{route('index2'}}";
+            window.location.href = "{{route('index2')}}";
 
         }
 

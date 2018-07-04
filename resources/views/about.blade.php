@@ -290,13 +290,13 @@
                     BECOME FRESHY
                 </h2>
                 <br>
-                <button class="btn" type="button" onclick="sponsors()"><img src="{{secure_asset('/consoletri.png')}}"
-                                                                        style="width:30px;">
-                    Sponsors
-                </button>
+
             </header>
             <br><br>
-
+            <button class="btn" type="button" onclick="sponsors()"><img src="{{secure_asset('/consoletri.png')}}"
+                                                                        style="width:30px;">
+                Sponsors
+            </button>
 
         </div>
         <div class="container-fluid row" style="text-align: center;">

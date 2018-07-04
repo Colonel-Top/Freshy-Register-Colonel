@@ -388,7 +388,7 @@
         }
 
         var back = function () {
-            window.location.href = "{{URL::to('/')}}";
+            window.location.href = "{{route('index')}}";
 
         }
         var relog = function () {

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -45,7 +45,7 @@
             background-image: -webkit-linear-gradient(14deg, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 50%);
             min-height: 504px;
             width: 100%;
-            min-height: 950px;
+            min-height: 1000px;
             top: 0;
 
         }

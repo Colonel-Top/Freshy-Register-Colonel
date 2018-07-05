@@ -45,7 +45,7 @@
             background-image: -webkit-linear-gradient(14deg, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 50%);
             min-height: 504px;
             width: 100%;
-            min-height: 1000px;
+            min-height: 1020px;
             top: 0;
 
         }

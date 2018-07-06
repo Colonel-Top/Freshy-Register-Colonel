@@ -784,7 +784,7 @@
             </header>
             <br>
             <div class="row user__header">
-                <div class="col-md-3"></div>
+
 
                 <div class="col-md-3">
                     <a href="https://th.canon/"> <img src="{{secure_asset('/sponsor/canon.png')}}" class="imageclassspon"></a>
@@ -794,7 +794,10 @@
                     <a href="https://www.krungsri.com/bank/th/home.html"> <img src="{{secure_asset('/sponsor/krungsri.png')}}"
                                                                                class="imageclassspon"></a>
                 </div>
-                <div class="col-md-3"></div>
+                <div class="col-md-3"><a href="http://www.majorcineplex.com/th/main"> <img src="{{secure_asset('/sponsor/major.png')}}"
+                                                                                                class="imageclassspon"></a></div>
+                <div class="col-md-3"><a href="http://lolane.com/th/home"> <img src="{{secure_asset('/sponsor/lolane.png')}}"
+                                                                                class="imageclassspon"></a></div>
             </div>
             <br>
             <div class="row user__header">

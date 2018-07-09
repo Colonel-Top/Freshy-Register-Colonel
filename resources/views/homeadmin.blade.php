@@ -292,7 +292,7 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <img src="{{secure_asset('/smallping.png')}}"style="width:100%;">
+                        <img src="{{secure_asset('/smallping.png')}}"style="width:25%;">
                     </div>
 
                 </div>

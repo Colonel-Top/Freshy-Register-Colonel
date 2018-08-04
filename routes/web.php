@@ -25,7 +25,7 @@ Route::prefix('staff')->group(function () {
     Route::get('/ap/{id}', 'UserController@entry')->name('entry');
     Route::get('/ab/{id}', 'UserController@abandon')->name('abandon');
     Route::get('/', 'HomeController@index')->name('indexhome');
-
+    Route::get('/live','@UserController@showlive')->name('live');
 
 });
 Route::get('/agreement','FreshyController@showagreement')->name('agreement');

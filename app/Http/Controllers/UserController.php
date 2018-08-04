@@ -42,7 +42,10 @@ class UserController extends Controller
         Auth::logout();
         return redirect()->intended(route('index'));
     }
+    public function showlive()
+    {
 
+    }
     public function index()
     {
         self::throws();

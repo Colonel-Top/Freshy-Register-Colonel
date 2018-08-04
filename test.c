@@ -11,15 +11,18 @@ for(int i = 1001 ; i <=x ; i++)
 	if(front ==  10){
 		front=0;
 		last++;
+		printf("\n");
 	}
 	if(last== 51)
 	{
 		sec++;
 		last = 1;
-
+printf("\n\n");
 	}
 	
-	printf("%c%d%d\n",front+65,sec,last);
+	printf("[%c%02d%02d] ",front+65,sec,last);
+	
+	
 	
 	
 		
